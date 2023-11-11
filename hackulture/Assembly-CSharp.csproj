@@ -53,11 +53,12 @@
     <UnityVersion>2021.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\script\work_card.cs" />
-    <Compile Include="Assets\script\my_dack.cs" />
-    <Compile Include="Assets\script\event_card.cs" />
-    <Compile Include="Assets\script\action_card.cs" />
     <Compile Include="Assets\script\card.cs" />
+    <Compile Include="Assets\script\work_card.cs" />
+    <Compile Include="Assets\script\event_card.cs" />
+    <Compile Include="Assets\script\my_dack.cs" />
+    <Compile Include="Assets\script\action_card.cs" />
+    <Compile Include="Assets\script\my_maincharactor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

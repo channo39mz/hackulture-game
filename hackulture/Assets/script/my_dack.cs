@@ -5,7 +5,7 @@ using System.Collections;
 
 public class my_dack : MonoBehaviour
 {
-    public ArrayList My_dack = new ArrayList();
+    public static ArrayList My_dack = new ArrayList();
     void Start()
     {
         work_card card1 = new work_card(1);
@@ -49,6 +49,11 @@ public class my_dack : MonoBehaviour
         {
             Debug.Log(My_dack[i].ToString());
         }
+    }
+
+    public void draw()
+    {
+
     }
     void Update()
     {
