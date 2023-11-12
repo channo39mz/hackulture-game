@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class action_card
 {
-    int action = 0;
+    public int action = 0;
     public action_card(int action)
     {
         this.action = action;

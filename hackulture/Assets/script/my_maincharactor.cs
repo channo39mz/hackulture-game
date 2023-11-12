@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class my_maincharactor : MonoBehaviour
 {
     public ArrayList My_hand = new ArrayList();
     public ArrayList My_love_item = new ArrayList();
+    public List<Image> imagehand = new List<Image>();
+    public List<Sprite> all_work_card = new List<Sprite>();
+    public List<Sprite> all_action_card = new List<Sprite>();
     public int my_scor = 0;
     public GameObject myBody;
     public GameObject testpoin;
@@ -44,19 +48,94 @@ public class my_maincharactor : MonoBehaviour
         Debug.Log(My_hand[0] + " myhand1");
         Debug.Log(My_hand[1] + " myhand2");
         Debug.Log(My_hand[2] + " myhand3");
+        print(My_dack[0] + " mydack1");
+        print(My_dack[1] + " mydack2");
+        print(My_dack[2] + " mydack3");
+        sethand();
     }
 
     public void draw()
     {
         My_hand.Add(My_dack[0]);
         My_dack.Remove(My_dack[0]);
+
     }
 
-    public void play(int number_Of_playcard)
+    public void sethand()
     {
-        var temp = My_hand[number_Of_playcard - 1];
+        for (int i = 0; i < 3; i++)
+        {
+            if (My_hand[i].GetType() == typeof(work_card))
+            {
+                int numOfWork = ((work_card)My_hand[i]).NumOfWork;
+                if (numOfWork == 1)
+                {
+                    imagehand[i].sprite = all_work_card[0];
+                }
+                else if (numOfWork == 2)
+                {
+                    imagehand[i].sprite = all_work_card[1];
+                }
+                else if (numOfWork == 3)
+                {
+                    imagehand[i].sprite = all_work_card[2];
+                }
+                else if (numOfWork == 4)
+                {
+                    imagehand[i].sprite = all_work_card[3];
+                }
+                else if (numOfWork == 5)
+                {
+                    imagehand[i].sprite = all_work_card[4];
+                }
+            }
+            else if (My_hand[i].GetType() == typeof(action_card))
+            {
+                int numOfaction = ((action_card)My_hand[i]).action;
+                Debug.Log(numOfaction);
+                if(numOfaction == 1)
+                {
+                    imagehand[i].sprite = all_action_card[0];
+                }
+                else if (numOfaction == 2)
+                {
+                    imagehand[i].sprite = all_action_card[1];
+                }
+                else if (numOfaction == 3)
+                {
+                    imagehand[i].sprite = all_action_card[2];
+                }
+            }
+        }
+        
+    }
+
+    public void playcard1()
+    {
+        Debug.Log("play1");
+        var temp = My_hand[0];
         My_hand.Remove(temp);
         My_dack.Add(temp);
+        draw();
+        sethand();
+    }
+    public void playcard2()
+    {
+        Debug.Log("play2");
+        var temp = My_hand[1];
+        My_hand.Remove(temp);
+        My_dack.Add(temp);
+        draw();
+        sethand();
+    }
+    public void playcard3()
+    {
+        Debug.Log("play3");
+        var temp = My_hand[2];
+        My_hand.Remove(temp);
+        My_dack.Add(temp);
+        draw();
+        sethand();
     }
 
     public void moveAtoB(GameObject targetpion)
