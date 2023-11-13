@@ -61,6 +61,8 @@
     <Compile Include="Assets\script\my_dack.cs" />
     <Compile Include="Assets\script\action_card.cs" />
     <Compile Include="Assets\script\my_maincharactor.cs" />
+    <Compile Include="Assets\script\ratatecam90.cs" />
+    <Compile Include="Assets\script\rotatecam270.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

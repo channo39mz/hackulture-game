@@ -362,6 +362,8 @@
 "Assets/script/event_card.cs"
 "Assets/script/my_dack.cs"
 "Assets/script/my_maincharactor.cs"
+"Assets/script/ratatecam90.cs"
+"Assets/script/rotatecam270.cs"
 "Assets/script/talaport.cs"
 "Assets/script/work_card.cs"
 -langversion:9.0

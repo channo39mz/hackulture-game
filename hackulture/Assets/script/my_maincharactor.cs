@@ -22,6 +22,8 @@ public class my_maincharactor : MonoBehaviour
     public List<GameObject> Rightway_Layer3 = new List<GameObject>();
     public List<GameObject> Myway = new List<GameObject>();
     public int myposition = 0;
+    public GameObject cam;
+    public int[] check = { 0, 0, 0 };
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +76,9 @@ public class my_maincharactor : MonoBehaviour
         foreach(GameObject i in Leftway_Layer1)
         {
             Myway.Add(i);
-        }  
+        }
+        cam.transform.Rotate(0.0f, 90.0f, 0.0f);
+        check[0] = 1;
     }
     public void select_R_way_layer1()
     {
@@ -82,6 +86,7 @@ public class my_maincharactor : MonoBehaviour
         {
             Myway.Add(i);
         }
+        check[0] = 2;
     }
     public void select_L_way_layer2()
     {
@@ -89,6 +94,15 @@ public class my_maincharactor : MonoBehaviour
         {
             Myway.Add(i);
         }
+        if(check[0] == 1)
+        {
+            cam.transform.Rotate(0.0f, 0.0f, 0.0f);
+        }
+        else
+        {
+            cam.transform.Rotate(0.0f, -90.0f, 0.0f);
+        }
+        check[1] = 1;
     }
     public void select_R_way_layer2()
     {
@@ -96,6 +110,15 @@ public class my_maincharactor : MonoBehaviour
         {
             Myway.Add(i);
         }
+        if (check[0] == 1)
+        {
+            cam.transform.Rotate(0.0f, 90.0f, 0.0f);
+        }
+        else
+        {
+            cam.transform.Rotate(0.0f, 0.0f, 0.0f);
+        }
+        check[1] = 2;
     }
     public void select_L_way_layer3()
     {
@@ -103,12 +126,28 @@ public class my_maincharactor : MonoBehaviour
         {
             Myway.Add(i);
         }
+        if (check[1] == 1)
+        {
+            cam.transform.Rotate(0.0f, 0.0f, 0.0f);
+        }
+        else
+        {
+            cam.transform.Rotate(0.0f, 90.0f, 0.0f);
+        }
     }
     public void select_R_way_layer3()
     {
         foreach (GameObject i in Rightway_Layer3)
         {
             Myway.Add(i);
+        }
+        if (check[1] == 1)
+        {
+            cam.transform.Rotate(0.0f, -90.0f, 0.0f);
+        }
+        else
+        {
+            cam.transform.Rotate(0.0f, 0.0f, 0.0f);
         }
     }
 
