@@ -12,8 +12,16 @@ public class my_maincharactor : MonoBehaviour
     public List<Sprite> all_action_card = new List<Sprite>();
     public int my_scor = 0;
     public GameObject myBody;
-    public GameObject testpoin;
+    public GameObject targetpoin;
     public static ArrayList My_dack = new ArrayList();
+    public List<GameObject> Leftway_Layer1 = new List<GameObject>();
+    public List<GameObject> Rightway_Layer1 = new List<GameObject>();
+    public List<GameObject> Leftway_Layer2 = new List<GameObject>();
+    public List<GameObject> Rightway_Layer2 = new List<GameObject>();
+    public List<GameObject> Leftway_Layer3 = new List<GameObject>();
+    public List<GameObject> Rightway_Layer3 = new List<GameObject>();
+    public List<GameObject> Myway = new List<GameObject>();
+    public int myposition = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +67,49 @@ public class my_maincharactor : MonoBehaviour
         My_hand.Add(My_dack[0]);
         My_dack.Remove(My_dack[0]);
 
+    }
+
+    public void select_L_way_layer1()
+    {
+        foreach(GameObject i in Leftway_Layer1)
+        {
+            Myway.Add(i);
+        }  
+    }
+    public void select_R_way_layer1()
+    {
+        foreach (GameObject i in Rightway_Layer1)
+        {
+            Myway.Add(i);
+        }
+    }
+    public void select_L_way_layer2()
+    {
+        foreach (GameObject i in Leftway_Layer2)
+        {
+            Myway.Add(i);
+        }
+    }
+    public void select_R_way_layer2()
+    {
+        foreach (GameObject i in Rightway_Layer2)
+        {
+            Myway.Add(i);
+        }
+    }
+    public void select_L_way_layer3()
+    {
+        foreach (GameObject i in Leftway_Layer3)
+        {
+            Myway.Add(i);
+        }
+    }
+    public void select_R_way_layer3()
+    {
+        foreach (GameObject i in Rightway_Layer3)
+        {
+            Myway.Add(i);
+        }
     }
 
     public void sethand()
@@ -110,6 +161,17 @@ public class my_maincharactor : MonoBehaviour
         
     }
 
+    public void walk(int i)
+    {
+        myposition += i;
+
+        if(myposition > Myway.Count-1)
+        {
+            myposition = Myway.Count-1;
+        }
+        targetpoin = Myway[myposition];
+    }
+
     public void playcard1()
     {
         Debug.Log("play1");
@@ -118,6 +180,16 @@ public class my_maincharactor : MonoBehaviour
         My_dack.Add(temp);
         draw();
         sethand();
+        if (temp.GetType() == typeof(work_card))
+        {
+            int numOfWork = ((work_card)temp).NumOfWork;
+            Debug.Log("walk " + numOfWork);
+            walk(numOfWork);
+        }
+        else if (temp.GetType() == typeof(action_card))
+        { 
+            ((action_card)temp).act();
+        }
     }
     public void playcard2()
     {
@@ -127,6 +199,16 @@ public class my_maincharactor : MonoBehaviour
         My_dack.Add(temp);
         draw();
         sethand();
+        if (temp.GetType() == typeof(work_card))
+        {
+            int numOfWork = ((work_card)temp).NumOfWork;
+            Debug.Log("walk " + numOfWork);
+            walk(numOfWork);
+        }
+        else if (temp.GetType() == typeof(action_card))
+        {
+            ((action_card)temp).act();
+        }
     }
     public void playcard3()
     {
@@ -136,6 +218,16 @@ public class my_maincharactor : MonoBehaviour
         My_dack.Add(temp);
         draw();
         sethand();
+        if (temp.GetType() == typeof(work_card))
+        {
+            int numOfWork = ((work_card)temp).NumOfWork;
+            Debug.Log("walk " + numOfWork);
+            walk(numOfWork);
+        }
+        else if (temp.GetType() == typeof(action_card))
+        {
+            ((action_card)temp).act();
+        }
     }
 
     public void moveAtoB(GameObject targetpion)
@@ -165,9 +257,9 @@ public class my_maincharactor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(myBody.transform.position != testpoin.transform.position)
+        if(myBody.transform.position != targetpoin.transform.position)
         {
-            moveAtoB(testpoin);
+            moveAtoB(targetpoin);
         }
     }
 }
