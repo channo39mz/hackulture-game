@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class my_maincharactor : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class my_maincharactor : MonoBehaviour
     public int myposition = 0;
     public GameObject cam;
     public int[] check = { 0, 0, 0 };
+    PhotonView view;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +64,16 @@ public class my_maincharactor : MonoBehaviour
         print(My_dack[1] + " mydack2");
         print(My_dack[2] + " mydack3");
         sethand();
+        /*GameObject myObject = GameObject.Find("Right_First_floor");
+        if(myObject != null)
+        {
+            Debug.Log(myObject.name);
+        }
+        else
+        {
+            Debug.LogError("Object with name 'ObjectName' not found.");
+        }*/
+        view = GetComponent<PhotonView>();
     }
 
     public void draw()
@@ -213,60 +225,71 @@ public class my_maincharactor : MonoBehaviour
 
     public void playcard1()
     {
-        Debug.Log("play1");
-        var temp = My_hand[0];
-        My_hand.Remove(temp);
-        My_dack.Add(temp);
-        draw();
-        sethand();
-        if (temp.GetType() == typeof(work_card))
-        {
-            int numOfWork = ((work_card)temp).NumOfWork;
-            Debug.Log("walk " + numOfWork);
-            walk(numOfWork);
-        }
-        else if (temp.GetType() == typeof(action_card))
-        { 
-            ((action_card)temp).act();
-        }
-    }
+        /*if (view.IsMine)
+        {*/
+            Debug.Log("play1");
+            var temp = My_hand[0];
+            My_hand.Remove(temp);
+            My_dack.Add(temp);
+            draw();
+            sethand();
+            if (temp.GetType() == typeof(work_card))
+            {
+                int numOfWork = ((work_card)temp).NumOfWork;
+                Debug.Log("walk " + numOfWork);
+                walk(numOfWork);
+            }
+            else if (temp.GetType() == typeof(action_card))
+            { 
+                ((action_card)temp).act();  
+            }
+
+    /*}*/
+}
     public void playcard2()
     {
-        Debug.Log("play2");
-        var temp = My_hand[1];
-        My_hand.Remove(temp);
-        My_dack.Add(temp);
-        draw();
-        sethand();
-        if (temp.GetType() == typeof(work_card))
-        {
-            int numOfWork = ((work_card)temp).NumOfWork;
-            Debug.Log("walk " + numOfWork);
-            walk(numOfWork);
-        }
-        else if (temp.GetType() == typeof(action_card))
-        {
-            ((action_card)temp).act();
-        }
+        /*f (view.IsMine)
+        {*/
+            Debug.Log("play2");
+            var temp = My_hand[1];
+            My_hand.Remove(temp);
+            My_dack.Add(temp);
+            draw();
+            sethand();
+            if (temp.GetType() == typeof(work_card))
+            {
+                int numOfWork = ((work_card)temp).NumOfWork;
+                Debug.Log("walk " + numOfWork);
+                walk(numOfWork);
+            }
+            else if (temp.GetType() == typeof(action_card))
+            {
+                ((action_card)temp).act();
+            }
+
+        /*}*/
     }
     public void playcard3()
     {
-        Debug.Log("play3");
-        var temp = My_hand[2];
-        My_hand.Remove(temp);
-        My_dack.Add(temp);
-        draw();
-        sethand();
-        if (temp.GetType() == typeof(work_card))
-        {
-            int numOfWork = ((work_card)temp).NumOfWork;
-            Debug.Log("walk " + numOfWork);
-            walk(numOfWork);
-        }
-        else if (temp.GetType() == typeof(action_card))
-        {
-            ((action_card)temp).act();
-        }
+        /*if (view.IsMine)
+        {*/
+            Debug.Log("play3");
+            var temp = My_hand[2];
+            My_hand.Remove(temp);
+            My_dack.Add(temp);
+            draw();
+            sethand();
+            if (temp.GetType() == typeof(work_card) )
+            {
+                int numOfWork = ((work_card)temp).NumOfWork;
+                Debug.Log("walk " + numOfWork);
+                walk(numOfWork);
+            }
+            else if (temp.GetType() == typeof(action_card))
+            {
+                ((action_card)temp).act();
+            }
+        /*}*/
     }
 
     public void moveAtoB(GameObject targetpion)
@@ -294,11 +317,11 @@ public class my_maincharactor : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if(myBody.transform.position != targetpoin.transform.position)
         {
             moveAtoB(targetpoin);
         }
-    }
+    }*/
 }
