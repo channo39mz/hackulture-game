@@ -103,11 +103,20 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playcard1
+  - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: setfalse
   - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playcard3
+  - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: settrue
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playcard2
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: selectRight
@@ -154,11 +163,20 @@ ScriptsOnlyBuild:
     fullTypeName: activeObject
     methodName: setfalse
   - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playcard1
+  - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: setfalse
   - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playcard3
+  - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: settrue
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playcard2
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: selectRight
@@ -218,71 +236,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 1662}
+      Script: {instanceID: 1950}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 2062}
     - Class: 114
-      Script: {instanceID: 1938}
+      Script: {instanceID: 2398}
     - Class: 114
-      Script: {instanceID: 2274}
+      Script: {instanceID: 2536}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 2744}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4106}
+      Script: {instanceID: 4232}
     - Class: 114
-      Script: {instanceID: 4110}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4422}
     - Class: 114
-      Script: {instanceID: 4442}
+      Script: {instanceID: 4568}
     - Class: 114
-      Script: {instanceID: 4724}
+      Script: {instanceID: 4850}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5452}
+      Script: {instanceID: 5578}
     - Class: 114
-      Script: {instanceID: 5478}
+      Script: {instanceID: 5604}
     - Class: 114
-      Script: {instanceID: 5546}
+      Script: {instanceID: 5672}
     - Class: 114
-      Script: {instanceID: 5808}
+      Script: {instanceID: 5932}
     - Class: 114
-      Script: {instanceID: 5944}
+      Script: {instanceID: 6068}
     - Class: 114
-      Script: {instanceID: 5992}
+      Script: {instanceID: 6116}
     - Class: 114
-      Script: {instanceID: 6202}
+      Script: {instanceID: 6326}
     - Class: 114
-      Script: {instanceID: 6356}
+      Script: {instanceID: 6480}
     - Class: 114
-      Script: {instanceID: 6712}
+      Script: {instanceID: 6836}
     - Class: 114
-      Script: {instanceID: 6726}
+      Script: {instanceID: 6850}
     - Class: 114
-      Script: {instanceID: 7368}
+      Script: {instanceID: 7492}
     - Class: 114
-      Script: {instanceID: 7916}
+      Script: {instanceID: 8036}
     - Class: 114
-      Script: {instanceID: 8186}
+      Script: {instanceID: 8306}
     - Class: 114
-      Script: {instanceID: 8308}
+      Script: {instanceID: 8428}
     - Class: 114
-      Script: {instanceID: 8440}
+      Script: {instanceID: 8558}
     - Class: 114
-      Script: {instanceID: 8778}
+      Script: {instanceID: 8894}
     - Class: 114
-      Script: {instanceID: 8800}
+      Script: {instanceID: 8916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -339,19 +357,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 2744}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3032}
+      Script: {instanceID: 3158}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 5062}
     - Class: 114
-      Script: {instanceID: 6202}
+      Script: {instanceID: 6326}
     - Class: 114
-      Script: {instanceID: 6712}
+      Script: {instanceID: 6836}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -402,43 +420,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1564}
+      Script: {instanceID: 2030}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 2062}
     - Class: 114
-      Script: {instanceID: 1938}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 2744}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3336}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 3496}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4088}
+      Script: {instanceID: 4214}
     - Class: 114
-      Script: {instanceID: 4108}
+      Script: {instanceID: 4234}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5416}
+      Script: {instanceID: 5542}
     - Class: 114
-      Script: {instanceID: 5546}
+      Script: {instanceID: 5672}
     - Class: 114
-      Script: {instanceID: 5808}
+      Script: {instanceID: 5932}
     - Class: 114
-      Script: {instanceID: 6202}
+      Script: {instanceID: 6326}
     - Class: 114
-      Script: {instanceID: 6356}
+      Script: {instanceID: 6480}
     - Class: 114
-      Script: {instanceID: 6712}
+      Script: {instanceID: 6836}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 7454}
     - Class: 114
-      Script: {instanceID: 8216}
+      Script: {instanceID: 8336}
     - Class: 114
-      Script: {instanceID: 8800}
+      Script: {instanceID: 8916}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -474,12 +492,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 7271649844da568677253e9df423644e
@@ -792,6 +804,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: d7f7bc402888d42a0dbb080693e6863c
@@ -1496,7 +1514,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: f5a05035cd0d58c15215582a2b30d78b
+      Hash: 48f35232ebb5843ddc71da91fb251f62
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -2189,4 +2207,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Loading.unity
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/mainscine.unity
-  playerPath: C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture.exe
+  playerPath: C:/Users/Smart/Desktop/hackulture/testbuild/hackulture.exe

@@ -121,8 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: my_maincharactor, Assembly-CSharp
+      - m_Target: {fileID: 7744733187516247076}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: playcard1
         m_Mode: 1
         m_Arguments:
@@ -544,8 +544,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: my_maincharactor, Assembly-CSharp
+      - m_Target: {fileID: 7744733187516247076}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: playcard3
         m_Mode: 1
         m_Arguments:
@@ -1314,8 +1314,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: my_maincharactor, Assembly-CSharp
+      - m_Target: {fileID: 7744733187516247076}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: playcard2
         m_Mode: 1
         m_Arguments:
@@ -1947,6 +1947,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myScore: 0
+  imagehand:
+  - {fileID: 7744733186159559657}
+  - {fileID: 7744733186361130637}
+  - {fileID: 7744733187005189406}
+  all_work_card:
+  - {fileID: 21300000, guid: 913ca44b553923d4facd7f6ce47c5d00, type: 3}
+  - {fileID: 21300000, guid: 43033c61ce43f3045a6666a2616ff756, type: 3}
+  - {fileID: 21300000, guid: 701b5573b2ce6ea4a9a57f1eca44b46a, type: 3}
+  - {fileID: 21300000, guid: 052635475202b9642b05922f36f080c3, type: 3}
+  - {fileID: 21300000, guid: 03129b84aebbc7e4d9450e74df8d04ad, type: 3}
+  all_action_card:
+  - {fileID: 21300000, guid: 44276e42ae19efa4397d96b00306531f, type: 3}
+  - {fileID: 21300000, guid: d164993ec617bf945b997153ee0d0ca4, type: 3}
+  - {fileID: 21300000, guid: e9c10574a6b7cb448bd5b35f56f5a21c, type: 3}
+  image1: {fileID: 7744733186159559657}
 --- !u!114 &7744733187516247079
 MonoBehaviour:
   m_ObjectHideFlags: 0
