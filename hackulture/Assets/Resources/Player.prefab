@@ -1962,6 +1962,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d164993ec617bf945b997153ee0d0ca4, type: 3}
   - {fileID: 21300000, guid: e9c10574a6b7cb448bd5b35f56f5a21c, type: 3}
   image1: {fileID: 7744733186159559657}
+  myLeftandRight: {fileID: 7744733185674046010}
 --- !u!114 &7744733187516247079
 MonoBehaviour:
   m_ObjectHideFlags: 0

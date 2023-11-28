@@ -16,6 +16,20 @@ public class Player : MonoBehaviour
     [SerializeField] private List<Sprite> all_work_card = new List<Sprite>();
     [SerializeField] private List<Sprite> all_action_card = new List<Sprite>();
     [SerializeField] Image image1;
+    [SerializeField] GameObject myLeftandRight;
+    private int[] province1 = { 1, 2, 3 };
+    private int[] province2 = { 1, 2, 3 };
+    private int[] province3 = { 1, 2, 3 };
+    private int[] province4 = { 1, 2, 3 };
+    private int[] province5 = { 1, 2, 3 };
+    private int[] province6 = { 1, 2, 3 };
+    private int[] province7 = { 1, 2, 3 };
+    private int[] province8 = { 1, 2, 3 };
+    private int[] province9 = { 1, 2, 3 };
+    private int[] province10 = { 1, 2, 3 };
+    private int[] province11 = { 1, 2, 3 };
+    private int[] province12 = { 1, 2, 3 };
+
     void Start()
     {
         Debug.Log("PASS");
@@ -201,6 +215,31 @@ public class Player : MonoBehaviour
         isClicked = false;
     }
 
+   
+    static int PickRandomNumber(ref int[] array)
+    {
+        if (array.Length == 0)
+        {
+            Debug.Log("empty");
+        }
+
+        // สร้าง instance ของ Random
+        System.Random random = new System.Random();
+
+        // สุ่มตำแหน่งที่จะเลือก
+        int randomIndex = random.Next(0, array.Length);
+
+        // ดึงค่าที่สุ่มได้
+        int pickedNumber = array[randomIndex];
+
+        // นำเลขที่สุ่มได้ออกจาก Array
+        List<int> tempList = new List<int>(array);
+        tempList.RemoveAt(randomIndex);
+        array = tempList.ToArray();
+
+        return pickedNumber;
+    }
+
     IEnumerator walkPlayer(int steps)
     {
         yield return StartCoroutine(waitForChooseRightLeft());
@@ -228,45 +267,281 @@ public class Player : MonoBehaviour
                 }
                 else if (stepsCount > countChild) //move until next step dont have Object
                 {
-                    stepsCount = 0; // Reset stepsCount prepare to next floor
-                    floor++;
-                    GameObject nextStart = GameObject.Find($"Start_{floor}");// Find start of next floor
-                    yield return StartCoroutine(MoveToTarget(nextStart));
-                    yield return StartCoroutine(RotateByTarget(nextStart));
-                    //make LeftorRight button active
-                    ScriptActiveBtn scriptActiveBtn = nextStart.GetComponent<ScriptActiveBtn>();  
-                    if (scriptActiveBtn != null)
+                    if (floor < 3)
                     {
-                        scriptActiveBtn.SetBtnActive();
-                    }
+                        myLeftandRight.SetActive(true);
 
-                    isClicked = true;
-                    yield return StartCoroutine(waitForChooseRightLeft());
-                    //Set new Floor
-                    searchString = $"{(isRight ? "Right" : "Left")}_{floor}_floor";
-                    myObject = GameObject.Find(searchString);
-                    myObjectCount = myObject.transform;
-                    countChild = myObjectCount.childCount;
-                    continue;
+
+                        stepsCount = 0; // Reset stepsCount prepare to next floor
+                        floor++;
+                        GameObject nextStart = GameObject.Find($"Start_{floor}");// Find start of next floor
+                        yield return StartCoroutine(MoveToTarget(nextStart));
+                        yield return StartCoroutine(RotateByTarget(nextStart));
+                        //make LeftorRight button active
+                        ScriptActiveBtn scriptActiveBtn = nextStart.GetComponent<ScriptActiveBtn>();
+                        if (scriptActiveBtn != null)
+                        {
+                            scriptActiveBtn.SetBtnActive();
+                        }
+
+                        isClicked = true;
+                        yield return StartCoroutine(waitForChooseRightLeft());
+                        //Set new Floor
+                        searchString = $"{(isRight ? "Right" : "Left")}_{floor}_floor";
+                        myObject = GameObject.Find(searchString);
+                        myObjectCount = myObject.transform;
+                        countChild = myObjectCount.childCount;
+                        continue;
+                    }
+                    else
+                    {
+                        searchString = "end";
+                        myObject = GameObject.Find(searchString);
+
+                        if (myObject != null) // ตรวจสอบว่าพบ GameObject หรือไม่
+                        {
+                            gameObject.transform.position = myObject.transform.position;
+                        }
+                        string searchString2 = $"EndC";
+                        myObject = GameObject.Find(searchString2);
+                        Debug.Log(myObject);
+                        if (myObject != null) // ตรวจสอบว่าพบ GameObject หรือไม่
+                        {
+                            Debug.Log(myObject);
+                            Canvas canvasComponent = myObject.GetComponent<Canvas>();
+
+                            canvasComponent.enabled = true;
+                        }
+                        Destroy(gameObject);
+                        break;
+                    }
                 }
                 //Get next position by get child at stepsCount
                 Transform myTransform = myObject.transform.GetChild(stepsCount);
                 GameObject targetPoint = myTransform.gameObject;
                 yield return StartCoroutine(MoveToTarget(targetPoint)); //Move Function
-                if(targetPoint.tag == "Corner")
+                if (targetPoint.tag == "Corner")
                 {
                     yield return StartCoroutine(RotateByTarget(targetPoint));
                 }
 
                 /*transform.position = myTransform.position;*/
                 stepsCount += 1;
-
+            }
+            Debug.Log(stepsCount);
+            yield return DoSomethingAsync();
+            float s = stepsCount;
+            Debug.Log(Mathf.CeilToInt(s / 3));
+            float z = Mathf.CeilToInt(s / 3);
+            yield return DoSomethingAsync();
+            if(z == 1)
+            {
+                int pickedNumber = PickRandomNumber(ref province1);
+                if(pickedNumber == 1)
+                {
+                    Debug.Log("province1 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province1 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province1 do some thing3");
+                }
+            }
+            if (z == 2)
+            {
+                int pickedNumber = PickRandomNumber(ref province2);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province2 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province2 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province2 do some thing3");
+                }
+            }
+            if (z == 3)
+            {
+                int pickedNumber = PickRandomNumber(ref province3);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province3 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province3 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province3 do some thing3");
+                }
+            }
+            if (z == 4)
+            {
+                int pickedNumber = PickRandomNumber(ref province4);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province4 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province4 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province4 do some thing3");
+                }
+            }
+            if (z == 5)
+            {
+                int pickedNumber = PickRandomNumber(ref province5);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province5 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province5 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province5 do some thing3");
+                }
+            }
+            if (z == 6)
+            {
+                int pickedNumber = PickRandomNumber(ref province6);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province6 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province6 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province6 do some thing3");
+                }
+            }
+            if (z == 7)
+            {
+                int pickedNumber = PickRandomNumber(ref province7);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province7 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province7 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province7 do some thing3");
+                }
+            }
+            if (z == 8)
+            {
+                int pickedNumber = PickRandomNumber(ref province8);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province8 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province8 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province8 do some thing3");
+                }
+            }
+            if (z == 9)
+            {
+                int pickedNumber = PickRandomNumber(ref province9);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province9 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province9 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province9 do some thing3");
+                }
+            }
+            if (z == 10)
+            {
+                int pickedNumber = PickRandomNumber(ref province10);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province10 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province10 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province10 do some thing3");
+                }
+            }
+            if (z == 11)
+            {
+                int pickedNumber = PickRandomNumber(ref province11);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province11 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province11 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province11 do some thing3");
+                }
+            }
+            if (z == 12)
+            {
+                int pickedNumber = PickRandomNumber(ref province12);
+                if (pickedNumber == 1)
+                {
+                    Debug.Log("province12 do some thing1");
+                }
+                if (pickedNumber == 2)
+                {
+                    Debug.Log("province12 do some thing2");
+                }
+                if (pickedNumber == 3)
+                {
+                    Debug.Log("province12 do some thing3");
+                }
             }
         }
         else
         {
             Debug.LogError("Object with name 'ObjectName' not found.");
         }
+    }
+    IEnumerator DoSomethingAsync()
+    {
+        // ทำงานที่ต้องใช้เวลานาน
+        Debug.Log("Doing something async...");
+
+        // รอเป็นเวลาหนึ่งวินาที
+        yield return new WaitForSeconds(1.0f);
+
+        // ทำงานเสร็จสิ้น
+        Debug.Log("Async task completed");
     }
     IEnumerator MoveToTarget(GameObject targetObject)
     {
@@ -289,6 +564,7 @@ public class Player : MonoBehaviour
         transform.position = targetPosition;
 
         Debug.Log("Move completed");
+      
     }
 
     IEnumerator RotateByTarget(GameObject targetObject)
@@ -313,6 +589,7 @@ public class Player : MonoBehaviour
         transform.rotation = targetRotation;
 
         Debug.Log("Rotation completed");
+        
     }
 
     IEnumerator waitForChooseRightLeft()

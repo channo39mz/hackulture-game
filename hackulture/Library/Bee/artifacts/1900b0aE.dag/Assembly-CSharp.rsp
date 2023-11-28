@@ -391,6 +391,7 @@
 "Assets/script/card.cs"
 "Assets/script/ConnectToServer.cs"
 "Assets/script/CreateAndJoinRoom.cs"
+"Assets/script/endGame.cs"
 "Assets/script/event_card.cs"
 "Assets/script/my_dack.cs"
 "Assets/script/my_maincharactor.cs"
