@@ -3,7 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ConnectToServer
     - CreateAndJoinRoom
+    - GameManager
+    - GameSettings
+    - GetPlayerProperties
+    - MasterManager
     - Player
+    - PlayerListing
+    - PlayerListingsMenu
     - ScriptActiveBtn
     - SpawnPosition
     - activeObject
@@ -52,10 +58,14 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     PhotonRealtime:
     - Photon.Realtime.AppSettings
@@ -84,6 +94,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -99,24 +110,26 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playcard1
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: setfalse
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playcard3
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: settrue
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playcard2
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: selectRight
@@ -148,14 +161,8 @@ ScriptsOnlyBuild:
     fullTypeName: activeObject
     methodName: setfalse
   - assembly: Assembly-CSharp
-    fullTypeName: my_maincharactor
-    methodName: playcard3
-  - assembly: Assembly-CSharp
-    fullTypeName: my_maincharactor
-    methodName: playcard2
-  - assembly: Assembly-CSharp
-    fullTypeName: my_maincharactor
-    methodName: playcard1
+    fullTypeName: Player
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: settrue
@@ -164,19 +171,19 @@ ScriptsOnlyBuild:
     methodName: setfalse
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playcard1
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: setfalse
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playcard3
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: settrue
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playcard2
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: selectRight
@@ -236,71 +243,77 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 1786}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1950}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2062}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 2398}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 2278}
     - Class: 114
-      Script: {instanceID: 3104}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 3622}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4232}
+      Script: {instanceID: 4108}
     - Class: 114
-      Script: {instanceID: 4236}
+      Script: {instanceID: 4112}
     - Class: 114
-      Script: {instanceID: 4422}
+      Script: {instanceID: 4298}
     - Class: 114
-      Script: {instanceID: 4568}
+      Script: {instanceID: 4444}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 5382}
+      Script: {instanceID: 4742}
     - Class: 114
-      Script: {instanceID: 5578}
+      Script: {instanceID: 5262}
     - Class: 114
-      Script: {instanceID: 5604}
+      Script: {instanceID: 5458}
     - Class: 114
-      Script: {instanceID: 5672}
+      Script: {instanceID: 5484}
     - Class: 114
-      Script: {instanceID: 5932}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 6068}
+      Script: {instanceID: 5814}
     - Class: 114
-      Script: {instanceID: 6116}
+      Script: {instanceID: 5950}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 5998}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6208}
     - Class: 114
-      Script: {instanceID: 6836}
+      Script: {instanceID: 6362}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 6464}
     - Class: 114
-      Script: {instanceID: 7492}
+      Script: {instanceID: 6722}
     - Class: 114
-      Script: {instanceID: 8036}
+      Script: {instanceID: 6736}
     - Class: 114
-      Script: {instanceID: 8306}
+      Script: {instanceID: 7380}
     - Class: 114
-      Script: {instanceID: 8428}
+      Script: {instanceID: 7768}
     - Class: 114
-      Script: {instanceID: 8558}
+      Script: {instanceID: 7930}
     - Class: 114
-      Script: {instanceID: 8894}
+      Script: {instanceID: 8200}
     - Class: 114
-      Script: {instanceID: 8916}
+      Script: {instanceID: 8322}
+    - Class: 114
+      Script: {instanceID: 8454}
+    - Class: 114
+      Script: {instanceID: 8792}
+    - Class: 114
+      Script: {instanceID: 8814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -357,19 +370,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 3104}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3158}
+      Script: {instanceID: 3034}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 5062}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 4940}
     - Class: 114
-      Script: {instanceID: 6836}
+      Script: {instanceID: 6208}
+    - Class: 114
+      Script: {instanceID: 6722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -418,45 +433,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1558}
+    - Class: 114
       Script: {instanceID: 1560}
     - Class: 114
-      Script: {instanceID: 2030}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 2062}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 1822}
     - Class: 114
-      Script: {instanceID: 3104}
+      Script: {instanceID: 1910}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3622}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 4214}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 4234}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 5382}
+      Script: {instanceID: 4090}
     - Class: 114
-      Script: {instanceID: 5542}
+      Script: {instanceID: 4110}
     - Class: 114
-      Script: {instanceID: 5672}
+      Script: {instanceID: 4172}
     - Class: 114
-      Script: {instanceID: 5932}
+      Script: {instanceID: 4742}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 5140}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 5262}
     - Class: 114
-      Script: {instanceID: 6836}
+      Script: {instanceID: 5422}
     - Class: 114
-      Script: {instanceID: 7454}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 8336}
+      Script: {instanceID: 5814}
     - Class: 114
-      Script: {instanceID: 8916}
+      Script: {instanceID: 6208}
+    - Class: 114
+      Script: {instanceID: 6362}
+    - Class: 114
+      Script: {instanceID: 6722}
+    - Class: 114
+      Script: {instanceID: 6734}
+    - Class: 114
+      Script: {instanceID: 7114}
+    - Class: 114
+      Script: {instanceID: 7194}
+    - Class: 114
+      Script: {instanceID: 7342}
+    - Class: 114
+      Script: {instanceID: 7934}
+    - Class: 114
+      Script: {instanceID: 8230}
+    - Class: 114
+      Script: {instanceID: 8814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -492,6 +527,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: c1d728126ff1918728036c59106d32b2
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: 7271649844da568677253e9df423644e
@@ -560,6 +607,12 @@ ScriptsOnlyBuild:
     className: PlayerOverviewPanel
   - hash:
       serializedVersion: 2
+      Hash: af0537dabf7072720b1497b88b975216
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerListing
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -584,7 +637,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 0cd71f9a2bd422c1c2612df392ffa133
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScriptActiveBtn
@@ -684,12 +737,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Photon.Chat.Demo
     className: ChatAppIdCheckerUI
-  - hash:
-      serializedVersion: 2
-      Hash: c1d728126ff1918728036c59106d32b2
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: RawImage
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -804,12 +851,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
-  - hash:
-      serializedVersion: 2
-      Hash: ae83e830e7a90c0aff918c4c2e520825
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: GraphicRaycaster
   - hash:
       serializedVersion: 2
       Hash: d7f7bc402888d42a0dbb080693e6863c
@@ -1256,6 +1297,12 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 759d60653dc5a678f5ff67ec1ae20106
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetPlayerProperties
+  - hash:
+      serializedVersion: 2
       Hash: e37675de1ea5e56da90f5600d33587bd
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1286,7 +1333,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1eb5695c300d7e61c896957f2b5d3bf9
+      Hash: e1e16a96d587931360c61f7b9db694a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CreateAndJoinRoom
@@ -1338,6 +1385,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: MacroScriptableObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -1514,7 +1567,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 48f35232ebb5843ddc71da91fb251f62
+      Hash: 0ec7ec71336fb99b465647adc54a3de9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1620,6 +1673,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: RoomListView
+  - hash:
+      serializedVersion: 2
+      Hash: cbf6f7a7b6384a8d4bbae402d793925b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameSettings
   - hash:
       serializedVersion: 2
       Hash: 267e1e00a8f1d106bd614339db235595
@@ -1734,6 +1793,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: f91958f9a0849ecfa80c9acbc492d38d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerListingsMenu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1932,6 +1997,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Asteroids
     className: LobbyMainPanel
+  - hash:
+      serializedVersion: 2
+      Hash: df8f1cf82cd539716fa2a71dae2646ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MasterManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2207,4 +2278,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Loading.unity
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/mainscine.unity
-  playerPath: C:/Users/Smart/Desktop/hackulture/testbuild/hackulture.exe
+  playerPath: C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture.exe

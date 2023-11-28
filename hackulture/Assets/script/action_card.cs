@@ -22,6 +22,7 @@ public class action_card
         {
             Debug.Log("act3");
         }
+        
     }
 }
    
