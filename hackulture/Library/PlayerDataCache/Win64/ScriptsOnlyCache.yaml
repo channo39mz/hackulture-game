@@ -5,7 +5,7 @@ ScriptsOnlyBuild:
     - CreateAndJoinRoom
     - GameManager
     - GameSettings
-    - GetPlayerProperties
+    - HoverOver
     - MasterManager
     - Player
     - PlayerListing
@@ -117,21 +117,6 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: Player
-    methodName: playCard
-  - assembly: Assembly-CSharp
-    fullTypeName: activeObject
-    methodName: setfalse
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: playCard
-  - assembly: Assembly-CSharp
-    fullTypeName: activeObject
-    methodName: settrue
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: playCard
-  - assembly: Assembly-CSharp
-    fullTypeName: Player
     methodName: selectRight
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
@@ -142,6 +127,21 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: setfalse
+  - assembly: Assembly-CSharp
+    fullTypeName: activeObject
+    methodName: setfalse
+  - assembly: Assembly-CSharp
+    fullTypeName: activeObject
+    methodName: settrue
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playCard
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playCard
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playCard
   - assembly: Assembly-CSharp
     fullTypeName: CreateAndJoinRoom
     methodName: JoinRoom
@@ -164,17 +164,8 @@ ScriptsOnlyBuild:
     fullTypeName: Player
     methodName: playCard
   - assembly: Assembly-CSharp
-    fullTypeName: activeObject
-    methodName: settrue
-  - assembly: Assembly-CSharp
-    fullTypeName: activeObject
-    methodName: setfalse
-  - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: playCard
-  - assembly: Assembly-CSharp
-    fullTypeName: activeObject
-    methodName: setfalse
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: playCard
@@ -182,8 +173,8 @@ ScriptsOnlyBuild:
     fullTypeName: activeObject
     methodName: settrue
   - assembly: Assembly-CSharp
-    fullTypeName: Player
-    methodName: playCard
+    fullTypeName: activeObject
+    methodName: setfalse
   - assembly: Assembly-CSharp
     fullTypeName: Player
     methodName: selectRight
@@ -196,6 +187,21 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: activeObject
     methodName: setfalse
+  - assembly: Assembly-CSharp
+    fullTypeName: activeObject
+    methodName: setfalse
+  - assembly: Assembly-CSharp
+    fullTypeName: activeObject
+    methodName: settrue
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playCard
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playCard
+  - assembly: Assembly-CSharp
+    fullTypeName: Player
+    methodName: playCard
   sceneClasses:
     Assets/Scenes/Loading.unity:
     - Class: 1
@@ -247,73 +253,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1664}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 1830}
+      Script: {instanceID: 1832}
     - Class: 114
-      Script: {instanceID: 1942}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2002}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2282}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 4108}
+      Script: {instanceID: 3502}
     - Class: 114
       Script: {instanceID: 4112}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 4116}
     - Class: 114
-      Script: {instanceID: 4444}
+      Script: {instanceID: 4302}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 4448}
     - Class: 114
-      Script: {instanceID: 4742}
+      Script: {instanceID: 4730}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 5458}
+      Script: {instanceID: 5462}
     - Class: 114
-      Script: {instanceID: 5484}
+      Script: {instanceID: 5488}
     - Class: 114
-      Script: {instanceID: 5552}
+      Script: {instanceID: 5556}
     - Class: 114
-      Script: {instanceID: 5814}
+      Script: {instanceID: 5818}
     - Class: 114
-      Script: {instanceID: 5950}
+      Script: {instanceID: 5954}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 6002}
     - Class: 114
-      Script: {instanceID: 6208}
+      Script: {instanceID: 6212}
     - Class: 114
-      Script: {instanceID: 6362}
+      Script: {instanceID: 6366}
     - Class: 114
-      Script: {instanceID: 6464}
+      Script: {instanceID: 6468}
     - Class: 114
-      Script: {instanceID: 6722}
+      Script: {instanceID: 6726}
     - Class: 114
-      Script: {instanceID: 6736}
+      Script: {instanceID: 6740}
     - Class: 114
-      Script: {instanceID: 7380}
+      Script: {instanceID: 7384}
     - Class: 114
-      Script: {instanceID: 7768}
+      Script: {instanceID: 7772}
     - Class: 114
-      Script: {instanceID: 7930}
+      Script: {instanceID: 7934}
     - Class: 114
-      Script: {instanceID: 8200}
+      Script: {instanceID: 8204}
     - Class: 114
-      Script: {instanceID: 8322}
+      Script: {instanceID: 8326}
     - Class: 114
-      Script: {instanceID: 8454}
+      Script: {instanceID: 8458}
     - Class: 114
-      Script: {instanceID: 8792}
+      Script: {instanceID: 8796}
     - Class: 114
-      Script: {instanceID: 8814}
+      Script: {instanceID: 8818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -372,19 +378,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 3034}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 4940}
+      Script: {instanceID: 4944}
     - Class: 114
-      Script: {instanceID: 6208}
+      Script: {instanceID: 6212}
     - Class: 114
-      Script: {instanceID: 6722}
+      Script: {instanceID: 6726}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -441,57 +447,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1822}
+      Script: {instanceID: 1824}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1912}
     - Class: 114
-      Script: {instanceID: 1942}
+      Script: {instanceID: 1944}
     - Class: 114
-      Script: {instanceID: 2746}
+      Script: {instanceID: 2002}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 4090}
+      Script: {instanceID: 3502}
     - Class: 114
-      Script: {instanceID: 4110}
+      Script: {instanceID: 4094}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 4114}
     - Class: 114
-      Script: {instanceID: 4742}
+      Script: {instanceID: 4176}
     - Class: 114
-      Script: {instanceID: 5140}
+      Script: {instanceID: 5144}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 5422}
+      Script: {instanceID: 5426}
     - Class: 114
-      Script: {instanceID: 5552}
+      Script: {instanceID: 5556}
     - Class: 114
-      Script: {instanceID: 5814}
+      Script: {instanceID: 5818}
     - Class: 114
-      Script: {instanceID: 6208}
+      Script: {instanceID: 6212}
     - Class: 114
-      Script: {instanceID: 6362}
+      Script: {instanceID: 6366}
     - Class: 114
-      Script: {instanceID: 6722}
+      Script: {instanceID: 6726}
     - Class: 114
-      Script: {instanceID: 6734}
+      Script: {instanceID: 6738}
     - Class: 114
-      Script: {instanceID: 7114}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 7194}
+      Script: {instanceID: 7198}
     - Class: 114
-      Script: {instanceID: 7342}
+      Script: {instanceID: 7346}
     - Class: 114
-      Script: {instanceID: 7934}
+      Script: {instanceID: 7938}
     - Class: 114
-      Script: {instanceID: 8230}
+      Script: {instanceID: 8234}
     - Class: 114
-      Script: {instanceID: 8814}
+      Script: {instanceID: 8818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -665,6 +671,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CurrentRoomIsVisibleProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 3d61d1bfe68f2e4a52293c89514118ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HoverOver
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
