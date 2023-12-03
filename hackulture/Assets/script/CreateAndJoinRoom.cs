@@ -19,7 +19,17 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         roomOptions.MaxPlayers = maxPlayers;
         PhotonNetwork.CreateRoom(createField.text,roomOptions,null);
 
+       
+
     }
+   /* public override void OnCreatedRoom()
+    {
+
+        int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
+        GameManager.Instance.allPlayers[userId] = new EachPlayer();
+        photonView.RPC("UpdatePlayerInfo", RpcTarget.AllBuffered, userId, PhotonNetwork.LocalPlayer.NickName, 0, "", 0);
+
+    }*/
     public void JoinRoom()
     {
         PhotonNetwork.JoinRoom(joinField.text);

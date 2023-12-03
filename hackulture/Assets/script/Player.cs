@@ -6,6 +6,10 @@ using Photon.Pun;
 using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 
+using System.Drawing;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEngine.SocialPlatforms.Impl;
+
 public class Player : MonoBehaviourPun
 {
     public int myScore = 0;
@@ -15,6 +19,9 @@ public class Player : MonoBehaviourPun
     private bool isClicked = true;
     private bool cardWait = false;
     private string searchString = "start_1_floor";
+    private bool firstRotatePerFloor = true;
+    private int playedCardNumber = 0;
+    private bool _isTurned;
     /*private int currentStep = 0;
     private int previousStep = 0;*/
     //private bool stepChanged =true;
@@ -32,17 +39,17 @@ public class Player : MonoBehaviourPun
 
     void Start()
     {
-
-
         work_card card1 = new work_card(1);
         work_card card2 = new work_card(2);
         work_card card3 = new work_card(2);
         work_card card4 = new work_card(2);
         work_card card5 = new work_card(3);
         work_card card6 = new work_card(4);
-        action_card card7 = new action_card(1);
-        action_card card8 = new action_card(2);
-        action_card card9 = new action_card(3);
+        work_card card7 = new work_card(4);
+        work_card card8 = new work_card(5);
+        action_card card9 = new action_card(1);
+        action_card card10 = new action_card(2);
+        action_card card11= new action_card(3);
         My_dack.Add(card1);
         My_dack.Add(card2);
         My_dack.Add(card3);
@@ -52,6 +59,8 @@ public class Player : MonoBehaviourPun
         My_dack.Add(card7);
         My_dack.Add(card8);
         My_dack.Add(card9);
+        My_dack.Add(card10);
+        My_dack.Add(card11);
         shiff();
         /*print(My_dack[0] + " mydack1");
         print(My_dack[1] + " mydack2");
@@ -92,30 +101,32 @@ public class Player : MonoBehaviourPun
             Debug.LogError("PhotonView component not found on this GameObject, or it doesn't belong to the local player.");
         }*/
 
+        //Create List when Player class was instantiate
+        if (photonView.IsMine)
+        {
+            int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
+            GameManager.Instance.allPlayers[userId] = new EachPlayer();
+
+        }
     }
     void Update()
     {
-        _StatKeeper.SetStat(this);
+
         if (photonView.IsMine)
         {
             int actorNumber = photonView.Owner.ActorNumber;
             string nickName = photonView.Owner.NickName;
             int score = photonView.Owner.GetScore();
             Vector3 position = transform.position;
-            string place = searchString;
+            string side = $"{(isRight ? "Right" : "Left")}";
+            int floor = this.floor;
             int steps = stepsCount;
+            int pos = floor*100 + steps;
             //Debug.Log($"Player: {actorNumber}, NickName: {nickName}, Score: {score}, Position: {position}");
-            Debug.Log(steps);
-            GameManager.Instance.photonView.RPC("UpdatePlayerInfo",RpcTarget.All,actorNumber,nickName,score,place,steps);
-            /*gameManager = FindObjectOfType<GameManager>();
-            if (gameManager == null)
-            {
-                Debug.Log("GameManager script not found");
-                return;
-            }
-            gameManager.UpdatePlayerInfo(actorNumber, nickName, score, position);*/
+            GameManager.Instance.photonView.RPC("UpdatePlayerInfo",RpcTarget.All,actorNumber,nickName,score,side,floor,steps,pos);
         }
-        
+        //Debug.Log("played card:" + playedCardNumber);
+        endTurn();
 
     }
     public int GetScore()
@@ -125,6 +136,29 @@ public class Player : MonoBehaviourPun
     public void SetScore(int newScore)
     {
         myScore = newScore;
+    }
+
+    public void endTurn()
+    {
+        if (photonView.IsMine)
+        {
+            if(playedCardNumber == 2)
+            {
+                int actorNumber = photonView.Owner.ActorNumber;
+                GameManager.Instance.photonView.RPC("setIsTurn", RpcTarget.All, actorNumber, false);
+                Photon.Realtime.Player playerOwn = PhotonNetwork.LocalPlayer;
+                if (playerOwn.GetNext() != null)
+                {
+                    GameManager.Instance.photonView.RPC("setIsTurn",RpcTarget.All,playerOwn.GetNext().ActorNumber,true);
+                    GameManager.currentPlayer = playerOwn.ActorNumber;
+                }
+                else
+                {
+                    Debug.Log("Dont have next Player");
+                }
+                playedCardNumber = 0;
+            }
+        }
     }
     public void shiff()
     {
@@ -192,10 +226,12 @@ public class Player : MonoBehaviourPun
     }
     public void playCard(int cardClicked)
     {
-        if(cardWait== false)
+        int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
+        _isTurned = GameManager.Instance.allPlayers[userId].IsTurn;
+        if (cardWait== false && _isTurned)
         {
-        cardWait = true;
-        cardFunction(cardClicked);
+            cardWait = true;
+            cardFunction(cardClicked);
         }
 
     }
@@ -220,6 +256,7 @@ public class Player : MonoBehaviourPun
             cardWait = false;
             //need to end action with cardWait = false;
         }
+        playedCardNumber++;
     }
    
 
@@ -242,7 +279,11 @@ public class Player : MonoBehaviourPun
     IEnumerator walkPlayer(int steps)
     {
         yield return StartCoroutine(waitForChooseRightLeft());
-        
+        if(!isRight && firstRotatePerFloor )
+        {
+            yield return StartCoroutine(RotateByTarget(null, -90f));
+
+        }
         searchString = $"{(isRight ? "Right" : "Left")}_{floor}_floor";
         Debug.Log(searchString);
         GameObject myObject = GameObject.Find(searchString);
@@ -270,13 +311,13 @@ public class Player : MonoBehaviourPun
                     floor++;
                     GameObject nextStart = GameObject.Find($"Start_{floor}");// Find start of next floor
                     yield return StartCoroutine(MoveToTarget(nextStart));
-                    yield return StartCoroutine(RotateByTarget(nextStart));
+                    yield return StartCoroutine(RotateByTarget(nextStart,0f));
                     //make LeftorRight button active
                     ScriptActiveBtn scriptActiveBtn = nextStart.GetComponent<ScriptActiveBtn>();  
                     if (scriptActiveBtn != null)
                     {
                         scriptActiveBtn.SetBtnActive(LeftOrRight);
-                        
+                        firstRotatePerFloor = true;
                     }
 
                     isClicked = true;
@@ -294,7 +335,7 @@ public class Player : MonoBehaviourPun
                 yield return StartCoroutine(MoveToTarget(targetPoint)); //Move Function
                 if(targetPoint.tag == "Corner")
                 {
-                    yield return StartCoroutine(RotateByTarget(targetPoint));
+                    yield return StartCoroutine(RotateByTarget(targetPoint, 0f));
                 }
                 /*cardWait = false;*/
                 /*transform.position = myTransform.position;*/
@@ -315,6 +356,7 @@ public class Player : MonoBehaviourPun
         float elapsedTime = 0f;
 
         Vector3 startPosition = transform.position;
+        
         Vector3 targetPosition = targetObject.transform.position;
         
 
@@ -332,16 +374,29 @@ public class Player : MonoBehaviourPun
         Debug.Log("Move completed");
     }
 
-    IEnumerator RotateByTarget(GameObject targetObject)
+    IEnumerator RotateByTarget(GameObject targetObject, float specificDegree)
     {
         float totalTime = 0.3f; // Adjust this based on how long you want the rotation to take
         float elapsedTime = 0f;
+        Quaternion targetRotation;
 
 
-        
+
         Quaternion startRotation = transform.rotation;
-        Quaternion targetRotation = targetObject.transform.rotation;
-        
+        if(specificDegree == 0f) { 
+            targetRotation = targetObject.transform.rotation;
+            Debug.Log("rotateByTarget");
+        }
+        else
+        {
+            targetRotation = Quaternion.Euler(0f,specificDegree, 0f);
+            if(floor == 2)
+            {
+                targetRotation = Quaternion.Euler(0f, 90f, 0f);
+            }
+            firstRotatePerFloor = false;
+        }
+
 
         while (elapsedTime < totalTime)
         {
