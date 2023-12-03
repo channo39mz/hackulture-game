@@ -1,499 +1,599 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1701568841052528, "dur": 282649, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1701568841052746, "dur": 15880, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1701568841068628, "dur": 253353, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1701568841321983, "dur": 13194, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1701568841335963, "dur": 11, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208070154, "dur": 899404, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208070387, "dur": 22502, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208092892, "dur": 49654, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208142549, "dur": 527894, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208670446, "dur": 286133, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208956581, "dur": 12976, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208970641, "dur": 10, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1701568841089805, "dur":1116, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841090932, "dur":208, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1701568841091178, "dur":23, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1701568841091201, "dur":420, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1701568841091638, "dur":643, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841092281, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303439, "dur":214, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303653, "dur":70, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303723, "dur":22, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303745, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303751, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303752, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303760, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303761, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303767, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303769, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303773, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303775, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303780, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303782, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303786, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303788, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303793, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303794, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303799, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303800, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303805, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303807, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303812, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303814, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303818, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303820, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303825, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303826, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303830, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303831, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303836, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303838, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303842, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303864, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841303886, "dur":1813, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1701568841091692, "dur":595, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841092289, "dur":5875, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098171, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098174, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098305, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098307, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098393, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098534, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098625, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098739, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098835, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098897, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841098987, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1701568841099045, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841099099, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1701568841099218, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841099295, "dur":96416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1701568841195713, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1701568841195782, "dur":107667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841091713, "dur":581, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841092294, "dur":5872, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098171, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098364, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098458, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/WinPixEventRuntime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098582, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098659, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098709, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098778, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098832, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098901, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841098976, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841099033, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841099087, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841099217, "dur":12840, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.State.pdb" }}
-,{ "pid":12345, "tid":2, "ts":1701568841112059, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841112175, "dur":7215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Environments.Internal.pdb" }}
-,{ "pid":12345, "tid":2, "ts":1701568841119390, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841119461, "dur":861, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120323, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120386, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120438, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120526, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120575, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120618, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120664, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120739, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120787, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120861, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120908, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841120980, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841121028, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841121101, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841121152, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841121194, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841121243, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841121329, "dur":138376, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
-,{ "pid":12345, "tid":2, "ts":1701568841259706, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1701568841259795, "dur":43650, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841091709, "dur":582, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841092291, "dur":5881, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841098173, "dur":243, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1701568841098417, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841098493, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1701568841098597, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841098693, "dur":9168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UI.pdb" }}
-,{ "pid":12345, "tid":3, "ts":1701568841107862, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841107926, "dur":675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":3, "ts":1701568841108602, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841108663, "dur":5738, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Environments.pdb" }}
-,{ "pid":12345, "tid":3, "ts":1701568841114401, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841114465, "dur":32718, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1701568841147184, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841147323, "dur":102843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonRealtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1701568841250167, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1701568841250263, "dur":53180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841091736, "dur":566, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841092302, "dur":5866, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098171, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098396, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098465, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098531, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098632, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098706, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098756, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098801, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098902, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841098951, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841099039, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841099113, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841099215, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841099312, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841099373, "dur":717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841100091, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841100156, "dur":7347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Scheduler.pdb" }}
-,{ "pid":12345, "tid":4, "ts":1701568841107504, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841107581, "dur":45831, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841153413, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841153493, "dur":112694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":4, "ts":1701568841266188, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1701568841266255, "dur":37184, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841091761, "dur":550, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841092311, "dur":5885, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098197, "dur":208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098405, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098483, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/websocket-sharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098544, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098636, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098691, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098765, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098812, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098923, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1701568841098975, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841099021, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1701568841099096, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841099219, "dur":60121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1701568841159340, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841159415, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":5, "ts":1701568841159474, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841159489, "dur":1089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":5, "ts":1701568841160624, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1701568841160761, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841160811, "dur":690, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":5, "ts":1701568841161501, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841161562, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1701568841161620, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841161627, "dur":3918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1701568841165599, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level0.resS" }}
-,{ "pid":12345, "tid":5, "ts":1701568841165663, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841165671, "dur":1452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level0.resS" }}
-,{ "pid":12345, "tid":5, "ts":1701568841167184, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1701568841167242, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1701568841167251, "dur":1119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":5, "ts":1701568841168417, "dur":135016, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841091783, "dur":536, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841092319, "dur":5855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098174, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098424, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098467, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture.exe" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098533, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098610, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098658, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098749, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098808, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841098909, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1701568841099034, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841099081, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1701568841099127, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841099226, "dur":9282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
-,{ "pid":12345, "tid":6, "ts":1701568841108508, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841108582, "dur":67554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":6, "ts":1701568841176137, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1701568841176252, "dur":127180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841091816, "dur":508, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841092324, "dur":5855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098179, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098367, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098485, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098589, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098668, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098725, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098770, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098826, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841098940, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841099015, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841099109, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841099215, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841099260, "dur":8769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.Core.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1701568841108030, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841108102, "dur":6316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Internal.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1701568841114418, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841114486, "dur":5341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Device.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1701568841119828, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841119892, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841119947, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120074, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120127, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120176, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120232, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120328, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120386, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120490, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120543, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120623, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120690, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120776, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120831, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120913, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841120966, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841121016, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841121067, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841121162, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841121217, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841121264, "dur":5748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1701568841127012, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841127099, "dur":175310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonUnityNetworking.dll" }}
-,{ "pid":12345, "tid":7, "ts":1701568841302410, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1701568841302507, "dur":941, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841091837, "dur":490, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841092327, "dur":5843, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098170, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098425, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098478, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098579, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098640, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098719, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098764, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098843, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098944, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841098981, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841099020, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841099068, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841099213, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841099332, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841099385, "dur":8131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Telemetry.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1701568841107516, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841107585, "dur":6740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1701568841114326, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841114427, "dur":743, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841115170, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841115232, "dur":657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841115889, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841115951, "dur":33747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841149699, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841149804, "dur":75944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonChat.dll" }}
-,{ "pid":12345, "tid":8, "ts":1701568841225749, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1701568841225828, "dur":77626, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841091856, "dur":476, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841092332, "dur":5834, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098171, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098359, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098465, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098528, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098612, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098668, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098735, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098794, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098892, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098943, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841098992, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841099049, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841099097, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841099220, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841099274, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841099337, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841099392, "dur":57881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":9, "ts":1701568841157274, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841157344, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":9, "ts":1701568841157404, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841157420, "dur":1426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":9, "ts":1701568841158903, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":9, "ts":1701568841158960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841158969, "dur":1249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":9, "ts":1701568841160271, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":9, "ts":1701568841160332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841160339, "dur":1213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":9, "ts":1701568841161599, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level2.resS" }}
-,{ "pid":12345, "tid":9, "ts":1701568841161654, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841161660, "dur":3060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level2.resS" }}
-,{ "pid":12345, "tid":9, "ts":1701568841164793, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level1" }}
-,{ "pid":12345, "tid":9, "ts":1701568841164857, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841164864, "dur":1141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level1" }}
-,{ "pid":12345, "tid":9, "ts":1701568841166055, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level0" }}
-,{ "pid":12345, "tid":9, "ts":1701568841166124, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841166131, "dur":1142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level0" }}
-,{ "pid":12345, "tid":9, "ts":1701568841167329, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/boot.config" }}
-,{ "pid":12345, "tid":9, "ts":1701568841167478, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1701568841167530, "dur":135905, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841091873, "dur":463, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841092336, "dur":5841, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098182, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098417, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098492, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098576, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098624, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098675, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098718, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098794, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098880, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841098962, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841099018, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841099076, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841099210, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841099279, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841099328, "dur":8121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Threading.pdb" }}
-,{ "pid":12345, "tid":10, "ts":1701568841107450, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841107527, "dur":11747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Registration.pdb" }}
-,{ "pid":12345, "tid":10, "ts":1701568841119275, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841119367, "dur":7624, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Analytics.pdb" }}
-,{ "pid":12345, "tid":10, "ts":1701568841126991, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841127096, "dur":10331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonUnityNetworking.pdb" }}
-,{ "pid":12345, "tid":10, "ts":1701568841137428, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841137545, "dur":137813, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
-,{ "pid":12345, "tid":10, "ts":1701568841275359, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1701568841275426, "dur":28014, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841091895, "dur":445, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841092340, "dur":5835, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098176, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098349, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098393, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098513, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098572, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098686, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098761, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098814, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841098921, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1701568841099003, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841099052, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":11, "ts":1701568841099099, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841099209, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1701568841099260, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841099299, "dur":8011, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.TextMeshPro.pdb" }}
-,{ "pid":12345, "tid":11, "ts":1701568841107312, "dur":336, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841107649, "dur":6694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Networking.pdb" }}
-,{ "pid":12345, "tid":11, "ts":1701568841114343, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841114434, "dur":964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":11, "ts":1701568841115398, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841115453, "dur":17644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Configuration.pdb" }}
-,{ "pid":12345, "tid":11, "ts":1701568841133098, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841133208, "dur":13997, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
-,{ "pid":12345, "tid":11, "ts":1701568841147206, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841147326, "dur":7231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonChat.pdb" }}
-,{ "pid":12345, "tid":11, "ts":1701568841154558, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841154638, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":11, "ts":1701568841154910, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841155098, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":11, "ts":1701568841155164, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841156036, "dur":2907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":11, "ts":1701568841158991, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1701568841159042, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841159048, "dur":1164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1701568841160278, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":11, "ts":1701568841160335, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841160342, "dur":1094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":11, "ts":1701568841161485, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1701568841161537, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1701568841161544, "dur":6983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1701568841168583, "dur":134874, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841091918, "dur":426, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841092344, "dur":5830, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098176, "dur":266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098442, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098494, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098588, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098654, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098701, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098801, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1701568841098995, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841099063, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1701568841099105, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841099211, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1701568841099270, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841099327, "dur":203997, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":12, "ts":1701568841303325, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1701568841303387, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":12, "ts":1701568841303388, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841091937, "dur":411, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841092348, "dur":5833, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098181, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098364, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098415, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098514, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098579, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098641, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098689, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098755, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098825, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1701568841098964, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841099122, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1701568841099222, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841099271, "dur":94338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":13, "ts":1701568841193610, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1701568841193711, "dur":109736, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841091956, "dur":395, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841092352, "dur":5829, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098182, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098353, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098417, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098576, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098673, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098727, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098826, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841098936, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841099005, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841099074, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841099129, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841099221, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841099288, "dur":8087, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Timeline.pdb" }}
-,{ "pid":12345, "tid":14, "ts":1701568841107376, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841107482, "dur":32626, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841140109, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841140209, "dur":9524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/PhotonRealtime.pdb" }}
-,{ "pid":12345, "tid":14, "ts":1701568841149733, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841149805, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Photon3Unity3D.pdb" }}
-,{ "pid":12345, "tid":14, "ts":1701568841149857, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841149901, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Photon3Unity3D.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841149946, "dur":1853, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841151801, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Newtonsoft.Json.pdb" }}
-,{ "pid":12345, "tid":14, "ts":1701568841151877, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841151931, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841151977, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152021, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152066, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152108, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152155, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152207, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152257, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841152381, "dur":9208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Assembly-CSharp.pdb" }}
-,{ "pid":12345, "tid":14, "ts":1701568841161590, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841161656, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level2" }}
-,{ "pid":12345, "tid":14, "ts":1701568841161729, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841161744, "dur":2970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level2" }}
-,{ "pid":12345, "tid":14, "ts":1701568841164782, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level1.resS" }}
-,{ "pid":12345, "tid":14, "ts":1701568841164843, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841164857, "dur":1345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/level1.resS" }}
-,{ "pid":12345, "tid":14, "ts":1701568841166256, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":14, "ts":1701568841166315, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1701568841166350, "dur":1255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":14, "ts":1701568841167653, "dur":135784, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841092012, "dur":342, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841092354, "dur":5817, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098176, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098398, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098452, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098523, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098590, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098650, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841098714, "dur":161826, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":15, "ts":1701568841260541, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1701568841260590, "dur":42856, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841092042, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841092361, "dur":5819, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098180, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098435, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098484, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098580, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098648, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098716, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098772, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098887, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098933, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1701568841098987, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841099063, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1701568841099138, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841099251, "dur":119329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":16, "ts":1701568841218581, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1701568841218674, "dur":84790, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1701568841306979, "dur":1377, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1701568841336097, "dur": 538, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1701568841335946, "dur": 706, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1701572208123125, "dur":1414, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208124547, "dur":162, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1701572208124750, "dur":21, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1701572208124771, "dur":374, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1701572208125161, "dur":597, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208125758, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208126866, "dur":162, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127028, "dur":70, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127098, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127101, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127105, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127107, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127112, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127114, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127118, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127120, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127124, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127125, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127129, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127131, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127135, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127136, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127140, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127141, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127145, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127147, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127151, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127152, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127156, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127158, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127162, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127163, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127167, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127168, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127173, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127174, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127178, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127179, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127184, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127185, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208127200, "dur":1554, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1701572208125353, "dur":420, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208125773, "dur":1144, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208125364, "dur":413, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208125778, "dur":1149, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208125375, "dur":408, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208125783, "dur":1148, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208125402, "dur":393, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208125795, "dur":1119, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208125396, "dur":395, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208125791, "dur":1120, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208125435, "dur":364, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208125799, "dur":1107, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208125480, "dur":324, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208125804, "dur":1098, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208125532, "dur":276, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208125808, "dur":1086, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208125568, "dur":244, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208125812, "dur":1076, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208125587, "dur":230, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208125817, "dur":1067, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208125617, "dur":203, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208125820, "dur":1059, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208125636, "dur":188, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208125824, "dur":1051, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208125673, "dur":154, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208125827, "dur":1046, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208125695, "dur":134, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208125829, "dur":1040, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208125728, "dur":105, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208125833, "dur":1034, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208125769, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208125770, "dur":1091, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208130007, "dur":389, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1701572208970768, "dur": 279, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1701572208516860, "dur": 133887, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1701572208517678, "dur": 36785, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1701572208630144, "dur": 11117, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1701572208641264, "dur": 9477, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1701572208641879, "dur": 8211, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1701572208654558, "dur": 1096, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1701572208653876, "dur": 1802, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208971107, "dur": 143, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1701572208709067, "dur":1237, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208710313, "dur":137, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1701572208710488, "dur":19, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1701572208710507, "dur":373, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1701572208710904, "dur":512, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208711416, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947427, "dur":312, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947739, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947749, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947750, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947756, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947758, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947763, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947764, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947768, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947769, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947773, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947775, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947778, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947779, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947784, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947786, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947790, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947791, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947795, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947797, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947800, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947801, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947805, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947806, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947810, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947811, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947815, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947816, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947820, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947821, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947826, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947828, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947831, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947843, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208947860, "dur":1452, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1701572208711164, "dur":258, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208711423, "dur":5088, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208716518, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1701572208716521, "dur":255, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208716781, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1701572208716783, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208716889, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208716955, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717044, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717140, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717244, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717358, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717468, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717535, "dur":218, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717754, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717812, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208717944, "dur":27483, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208745428, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208745653, "dur":33444, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1701572208779098, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208779255, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1701572208779396, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208779495, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1701572208779560, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208780328, "dur":3330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1701572208783720, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":1, "ts":1701572208783780, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208783784, "dur":1528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":1, "ts":1701572208785369, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1701572208785424, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208785428, "dur":1150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":1, "ts":1701572208786637, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1701572208786799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208786804, "dur":1156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1701572208788019, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1701572208788077, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208788081, "dur":2481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/resources.assets" }}
+,{ "pid":12345, "tid":1, "ts":1701572208790611, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/level2.resS" }}
+,{ "pid":12345, "tid":1, "ts":1701572208790670, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208790677, "dur":1313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/level2.resS" }}
+,{ "pid":12345, "tid":1, "ts":1701572208792038, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1701572208792092, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208792098, "dur":1289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1701572208793445, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1701572208793511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208793516, "dur":1060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1701572208794632, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1701572208794689, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208794692, "dur":1097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1701572208795842, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1701572208795908, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1701572208795912, "dur":1172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1701572208797137, "dur":150294, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208711164, "dur":262, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208711426, "dur":5089, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208716519, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1701572208716730, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208716878, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1701572208716993, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717088, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717159, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717267, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717362, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717457, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717518, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717612, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717667, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717746, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717876, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208717976, "dur":7536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Telemetry.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1701572208725514, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208725623, "dur":6570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Networking.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1701572208732193, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208732352, "dur":36189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208768542, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208768767, "dur":8720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonRealtime.pdb" }}
+,{ "pid":12345, "tid":2, "ts":1701572208777487, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208777592, "dur":93313, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208870913, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1701572208870921, "dur":1213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1701572208872176, "dur":75250, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208711169, "dur":260, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208711429, "dur":5089, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208716518, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1701572208716751, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208716843, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717181, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717316, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717361, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717425, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717475, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717574, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717663, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208717755, "dur":7647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1701572208725402, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208725522, "dur":6421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1701572208731943, "dur":209, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208732154, "dur":7070, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Environments.Internal.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1701572208739224, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208739339, "dur":31606, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":3, "ts":1701572208770945, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208771088, "dur":6058, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonChat.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1701572208777147, "dur":240, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208777391, "dur":6673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1701572208784152, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208784158, "dur":1374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1701572208785604, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1701572208785666, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208785670, "dur":1280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1701572208787005, "dur":9064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1701572208796076, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1701572208796082, "dur":1694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1701572208797830, "dur":149598, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208711230, "dur":218, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208711448, "dur":5072, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208716521, "dur":269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1701572208716791, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208716888, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/websocket-sharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208716961, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717048, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717107, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717215, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717326, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717420, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717482, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717574, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717637, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717754, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717820, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208717916, "dur":229301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1701572208947218, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1701572208947386, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":4, "ts":1701572208947387, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208711250, "dur":211, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208711461, "dur":5051, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208716519, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1701572208716707, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208716806, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1701572208716926, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717002, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717073, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717162, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717257, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717323, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717384, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717472, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717523, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717607, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717657, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208717758, "dur":7247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1701572208725006, "dur":214, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208725225, "dur":6716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Scheduler.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1701572208731942, "dur":203, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208732148, "dur":6657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Environments.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1701572208738806, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208739001, "dur":6423, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Device.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1701572208745425, "dur":224, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208745652, "dur":6550, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Configuration.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1701572208752203, "dur":205, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208752411, "dur":6886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Analytics.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1701572208759298, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208759404, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208759457, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208759542, "dur":140516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonUnityNetworking.Utilities.dll" }}
+,{ "pid":12345, "tid":5, "ts":1701572208900058, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1701572208900193, "dur":47237, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208711205, "dur":233, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208711438, "dur":5076, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208716519, "dur":303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1701572208716822, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208716890, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1701572208716951, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208717035, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1701572208717102, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208717202, "dur":166269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1701572208883472, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1701572208883628, "dur":63799, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208711201, "dur":232, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208711433, "dur":5087, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208716522, "dur":306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1701572208716828, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208716939, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208716999, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717137, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717199, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717283, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717374, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717481, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717539, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717626, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717749, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208717843, "dur":7093, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1701572208724939, "dur":330, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208725270, "dur":38427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208763698, "dur":201, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208763903, "dur":165489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonUnityNetworking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1701572208929392, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1701572208929543, "dur":17907, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208711225, "dur":217, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208711442, "dur":5083, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208716525, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1701572208716732, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208716831, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208716948, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208717035, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208717091, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208717197, "dur":7974, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1701572208725171, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208725300, "dur":6644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Registration.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1701572208731945, "dur":296, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208732242, "dur":25251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208757494, "dur":235, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208757730, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208757796, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208757886, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208757945, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758024, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758078, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758153, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758203, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758277, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758325, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758398, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758447, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758521, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758568, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758647, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758694, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758767, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758817, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758893, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208758940, "dur":259, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759200, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759274, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759369, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759427, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759512, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759567, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208759668, "dur":6215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonUnityNetworking.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1701572208765885, "dur":237, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208766125, "dur":137367, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonUnityNetworking.Demos.dll" }}
+,{ "pid":12345, "tid":8, "ts":1701572208903493, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1701572208903601, "dur":43844, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208711246, "dur":209, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208711455, "dur":5071, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208716527, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1701572208716718, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208716899, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208716996, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717101, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717168, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717247, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717344, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717443, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717499, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717585, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717641, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208717756, "dur":53129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208770887, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208771087, "dur":123525, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonRealtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1701572208894612, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1701572208894773, "dur":52670, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208711270, "dur":195, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208711465, "dur":5048, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208716519, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1701572208716706, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208716831, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208716994, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717078, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717158, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717349, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717411, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717510, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717559, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717650, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717749, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717840, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717894, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208717995, "dur":56398, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208774393, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208774508, "dur":128944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208903457, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1701572208903464, "dur":1262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1701572208904770, "dur":42667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208711300, "dur":167, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208711467, "dur":5058, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208716526, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1701572208716736, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208716839, "dur":294, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717133, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717224, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717315, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717417, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717511, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717608, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717672, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208717837, "dur":8802, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1701572208726639, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208726745, "dur":5373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Internal.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1701572208732119, "dur":202, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208732322, "dur":25172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208757494, "dur":217, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208757715, "dur":856, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208758572, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208758670, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208758724, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208758810, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208758860, "dur":418, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208759279, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208759335, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208759413, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208759459, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208759530, "dur":6396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonUnityNetworking.Utilities.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1701572208765926, "dur":194, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208766124, "dur":6725, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonUnityNetworking.Demos.pdb" }}
+,{ "pid":12345, "tid":11, "ts":1701572208772850, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208773047, "dur":71100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/PhotonChat.dll" }}
+,{ "pid":12345, "tid":11, "ts":1701572208844148, "dur":221, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1701572208844372, "dur":103067, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208711319, "dur":160, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208711479, "dur":5040, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208716519, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1701572208716718, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208716854, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture.exe" }}
+,{ "pid":12345, "tid":12, "ts":1701572208716929, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717002, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717091, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717171, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717301, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717397, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717474, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717571, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717624, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717751, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717800, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208717871, "dur":101147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1701572208819019, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1701572208819176, "dur":128258, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208711345, "dur":138, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208711483, "dur":5039, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208716525, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1701572208716698, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208716793, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1701572208716906, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717044, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717119, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717240, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717288, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717395, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717485, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717576, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717748, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208717838, "dur":104051, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":13, "ts":1701572208821889, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1701572208821987, "dur":125446, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208711364, "dur":123, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208711487, "dur":5029, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208716519, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1701572208716705, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208716805, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":14, "ts":1701572208716920, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717023, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717081, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717176, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717231, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717300, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717347, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717426, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717498, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717591, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717649, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208717760, "dur":110189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":14, "ts":1701572208827950, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1701572208828071, "dur":119352, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208711381, "dur":110, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208711491, "dur":5031, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208716522, "dur":294, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":15, "ts":1701572208716816, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208716957, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717016, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717122, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717184, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717277, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717334, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717427, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717505, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717590, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717645, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717753, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717823, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208717920, "dur":7380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Threading.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1701572208725300, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208725411, "dur":47427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208772838, "dur":211, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773051, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Photon3Unity3D.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773117, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773203, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Photon3Unity3D.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773255, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773329, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Newtonsoft.Json.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773374, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773446, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773493, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773564, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773611, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773682, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773731, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773803, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773850, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208773923, "dur":5879, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Cinemachine.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1701572208779805, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208780695, "dur":2939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/Managed/Cinemachine.pdb" }}
+,{ "pid":12345, "tid":15, "ts":1701572208783687, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208783747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208783753, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208784991, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208785040, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208785044, "dur":1057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208786144, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":15, "ts":1701572208786195, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208786199, "dur":990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":15, "ts":1701572208787232, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208787282, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208787309, "dur":5542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208792897, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/level1.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208792950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208792955, "dur":1120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/level1.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208794120, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208794171, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208794175, "dur":1045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1701572208795265, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":15, "ts":1701572208795317, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208795320, "dur":1123, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":15, "ts":1701572208796485, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/boot.config" }}
+,{ "pid":12345, "tid":15, "ts":1701572208796618, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1701572208796622, "dur":1185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Client/hackulture_Data/boot.config" }}
+,{ "pid":12345, "tid":15, "ts":1701572208797849, "dur":149581, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208711400, "dur":95, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208711495, "dur":5028, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208716524, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1701572208716765, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208716847, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717144, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717226, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717282, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717377, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717445, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717532, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717595, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717749, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717814, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208717899, "dur":7622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":16, "ts":1701572208725521, "dur":415, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208725937, "dur":1290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":16, "ts":1701572208727227, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208727332, "dur":74237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Client/hackulture_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":16, "ts":1701572208801570, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1701572208801731, "dur":145693, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1701572208950468, "dur":1954, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1701572208971301, "dur": 408, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1701572208970617, "dur": 1107, "ph": "X", "name": "Write chrome-trace events", "args": {} },

@@ -47,9 +47,8 @@ public class Player : MonoBehaviourPun
         work_card card6 = new work_card(4);
         work_card card7 = new work_card(4);
         work_card card8 = new work_card(5);
-        action_card card9 = new action_card(1);
-        action_card card10 = new action_card(2);
-        action_card card11= new action_card(3);
+        //GameManager.Instance.allPlayers[PhotonNetwork.LocalPlayer.ActorNumber];
+        
         My_dack.Add(card1);
         My_dack.Add(card2);
         My_dack.Add(card3);
@@ -58,9 +57,7 @@ public class Player : MonoBehaviourPun
         My_dack.Add(card6);
         My_dack.Add(card7);
         My_dack.Add(card8);
-        My_dack.Add(card9);
-        My_dack.Add(card10);
-        My_dack.Add(card11);
+        
         shiff();
         /*print(My_dack[0] + " mydack1");
         print(My_dack[1] + " mydack2");
@@ -106,6 +103,12 @@ public class Player : MonoBehaviourPun
         {
             int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
             GameManager.Instance.allPlayers[userId] = new EachPlayer();
+            action_card card9 = new action_card(1, $"{userId}");
+            action_card card10 = new action_card(2, $"{userId}");
+            action_card card11 = new action_card(3, $"{userId}");
+            My_dack.Add(card9);
+            My_dack.Add(card10);
+            My_dack.Add(card11);
 
         }
     }
@@ -122,6 +125,7 @@ public class Player : MonoBehaviourPun
             int floor = this.floor;
             int steps = stepsCount;
             int pos = floor*100 + steps;
+            string character = $"{actorNumber}";
             //Debug.Log($"Player: {actorNumber}, NickName: {nickName}, Score: {score}, Position: {position}");
             GameManager.Instance.photonView.RPC("UpdatePlayerInfo",RpcTarget.All,actorNumber,nickName,score,side,floor,steps,pos);
         }

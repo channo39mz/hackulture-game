@@ -15,6 +15,7 @@ public class EachPlayer
     public int Steps;
     public int Pos;
     public int Rank;
+    public string Character;
     public bool IsTurn = false;
 }   
 public class GameManager : MonoBehaviourPunCallbacks
@@ -115,7 +116,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         
     }
     [PunRPC]
-    public void UpdatePlayerInfo(int actorNumber, string nickName, int score, string side, int floor, int steps, int pos)
+    public void UpdatePlayerInfo(int actorNumber, string nickName, int score, string side, int floor, int steps, int pos,string character)
     {
         if (allPlayers.ContainsKey(actorNumber))
         {
@@ -125,6 +126,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             playerInfo.Side = side;
             playerInfo.Floor = floor;
             playerInfo.Steps = steps;
+            playerInfo.Character = character;
             playerInfo.Pos = pos;
         }
     }
