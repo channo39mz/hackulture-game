@@ -30,7 +30,7 @@ public class my_maincharactor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        work_card card1 = new work_card(1);
+        /*work_card card1 = new work_card(1);
         work_card card2 = new work_card(2);
         work_card card3 = new work_card(2);
         work_card card4 = new work_card(2);
@@ -47,7 +47,7 @@ public class my_maincharactor : MonoBehaviour
         My_dack.Add(card6);
         My_dack.Add(card7);
         My_dack.Add(card8);
-        My_dack.Add(card9);
+        My_dack.Add(card9);*/
         shiff();
         //viewdeack();
         print(My_dack[0] + " mydack1");

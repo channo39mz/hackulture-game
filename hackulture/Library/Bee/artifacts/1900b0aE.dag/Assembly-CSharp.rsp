@@ -396,7 +396,6 @@
 "Assets/script/Manager/GameSettings.cs"
 "Assets/script/Manager/MasterManager.cs"
 "Assets/script/Manager/SingletonScriptableObject.cs"
-"Assets/script/my_dack.cs"
 "Assets/script/my_maincharactor.cs"
 "Assets/script/Player.cs"
 "Assets/script/PlayerListing.cs"
@@ -405,7 +404,6 @@
 "Assets/script/rotatecam270.cs"
 "Assets/script/ScriptActiveBtn.cs"
 "Assets/script/SpawnPosition.cs"
-"Assets/script/talaport.cs"
 "Assets/script/work_card.cs"
 -langversion:9.0
 
