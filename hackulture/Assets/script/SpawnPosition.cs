@@ -14,6 +14,7 @@ public class SpawnPosition : MonoBehaviour
     {
         Vector3 randomPosition = transform.position;
         PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);
+
     }
     
 

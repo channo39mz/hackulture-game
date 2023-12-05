@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Corner
   - HandCard1
+  - Ground
+  - SpotLight
   layers:
   - Default
   - TransparentFX

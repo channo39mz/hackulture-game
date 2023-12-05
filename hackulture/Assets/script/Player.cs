@@ -27,6 +27,7 @@ public class Player : MonoBehaviourPun
     //private bool stepChanged =true;
     private ArrayList My_dack = new ArrayList();
     private ArrayList My_hand = new ArrayList();
+    private ArrayList My_item = new ArrayList();
     [SerializeField] private List<Image> imagehand = new List<Image>();
     [SerializeField] private List<Sprite> all_work_card = new List<Sprite>();
     [SerializeField] private List<Sprite> all_action_card = new List<Sprite>();
@@ -48,7 +49,13 @@ public class Player : MonoBehaviourPun
         work_card card7 = new work_card(4);
         work_card card8 = new work_card(5);
         //GameManager.Instance.allPlayers[PhotonNetwork.LocalPlayer.ActorNumber];
-        
+        action_card card9 = new action_card(1);
+        action_card card10 = new action_card(2);
+        action_card card11 = new action_card(3);
+        My_dack.Add(card9);
+        My_dack.Add(card10);
+        My_dack.Add(card11);
+
         My_dack.Add(card1);
         My_dack.Add(card2);
         My_dack.Add(card3);
@@ -97,19 +104,13 @@ public class Player : MonoBehaviourPun
         {
             Debug.LogError("PhotonView component not found on this GameObject, or it doesn't belong to the local player.");
         }*/
-
         //Create List when Player class was instantiate
         if (photonView.IsMine)
         {
             int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
             GameManager.Instance.allPlayers[userId] = new EachPlayer();
-            action_card card9 = new action_card(1, $"{userId}");
-            action_card card10 = new action_card(2, $"{userId}");
-            action_card card11 = new action_card(3, $"{userId}");
-            My_dack.Add(card9);
-            My_dack.Add(card10);
-            My_dack.Add(card11);
-
+            string nickName = PhotonNetwork.LocalPlayer.NickName;
+            GameManager.Instance.photonView.RPC("addEachPlayerToDict", RpcTarget.All, userId);
         }
     }
     void Update()
@@ -126,10 +127,36 @@ public class Player : MonoBehaviourPun
             int steps = stepsCount;
             int pos = floor*100 + steps;
             string character = $"{actorNumber}";
+            int photonViewId = PhotonView.Get(gameObject).ViewID;
             //Debug.Log($"Player: {actorNumber}, NickName: {nickName}, Score: {score}, Position: {position}");
-            GameManager.Instance.photonView.RPC("UpdatePlayerInfo",RpcTarget.All,actorNumber,nickName,score,side,floor,steps,pos);
+            GameManager.Instance.photonView.RPC("UpdatePlayerInfo",RpcTarget.All,actorNumber,photonViewId,nickName,score,side,floor,steps,pos,character);
+            int userId = PhotonNetwork.LocalPlayer.ActorNumber;
+            _isTurned = GameManager.Instance.allPlayers[userId].IsTurn;
+            foreach (var player in PhotonNetwork.PlayerList)
+            {
+                if (GameManager.Instance.allPlayers.ContainsKey(player.ActorNumber) == false)
+                {
+                    photonView.RPC("addEachPlayerToDict", RpcTarget.All, player.ActorNumber);
+                    GameManager.Instance.photonView.RPC("UpdatePlayerInfo", RpcTarget.All, actorNumber, photonViewId, nickName, score, side, floor, steps, pos, character);
+                }
+                
+            }
+
+           
+            /*if( _isTurned )
+            {
+                int targetPhotonViewID = PhotonView.Get(gameObject).ViewID;
+                Debug.Log(targetPhotonViewID);
+                gameObject.tag = "SpotLight";
+                GameManager.Instance.photonView.RPC("SwitchCameraToPlayer", RpcTarget.All, actorNumber, targetPhotonViewID);
+
+            }
+            else
+            {
+                gameObject.tag = "Player";
+            }*/
         }
-        //Debug.Log("played card:" + playedCardNumber);
+
         endTurn();
 
     }
@@ -148,6 +175,7 @@ public class Player : MonoBehaviourPun
         {
             if(playedCardNumber == 2)
             {
+                //gameObject.tag = "Player";
                 int actorNumber = photonView.Owner.ActorNumber;
                 GameManager.Instance.photonView.RPC("setIsTurn", RpcTarget.All, actorNumber, false);
                 Photon.Realtime.Player playerOwn = PhotonNetwork.LocalPlayer;
@@ -161,6 +189,7 @@ public class Player : MonoBehaviourPun
                     Debug.Log("Dont have next Player");
                 }
                 playedCardNumber = 0;
+               
             }
         }
     }
@@ -168,7 +197,7 @@ public class Player : MonoBehaviourPun
     {
         for (int i = 0; i < My_dack.Count; i++)
         {
-            int rannum = Random.Range(0, 9);
+            int rannum = Random.Range(0, 11);
             var temp = My_dack[i];
             My_dack[i] = My_dack[rannum];
             My_dack[rannum] = temp;
@@ -212,7 +241,7 @@ public class Player : MonoBehaviourPun
             else if (My_hand[i].GetType() == typeof(action_card))
             {
                 int numOfaction = ((action_card)My_hand[i]).action;
-/*                Debug.Log(numOfaction);*/
+                /*                Debug.Log(numOfaction);*/
                 if (numOfaction == 1)
                 {
                     imagehand[i].sprite = all_action_card[0];
@@ -236,10 +265,12 @@ public class Player : MonoBehaviourPun
         {
             cardWait = true;
             cardFunction(cardClicked);
+            Debug.Log($"isTurned: {_isTurned}");
         }
+        Debug.Log($"isTurned: {_isTurned}");
 
     }
-    
+
     public void cardFunction(int cardIdx)
     {   
         var temp = My_hand[cardIdx-1];
@@ -252,6 +283,7 @@ public class Player : MonoBehaviourPun
             int numOfWork = ((work_card)temp).NumOfWork;
             //Debug.Log("walk " + numOfWork);
             StartCoroutine(walkPlayer(numOfWork));
+            
 
         }
         else if (temp.GetType() == typeof(action_card))
@@ -259,8 +291,10 @@ public class Player : MonoBehaviourPun
             ((action_card)temp).act();
             cardWait = false;
             //need to end action with cardWait = false;
+            playedCardNumber++;
+
         }
-        playedCardNumber++;
+        
     }
    
 
@@ -268,7 +302,6 @@ public class Player : MonoBehaviourPun
     {
         isRight = false;
         isClicked = false;
-        Debug.Log(isClicked);
 
     }
     public void selectRight()
@@ -285,7 +318,7 @@ public class Player : MonoBehaviourPun
         yield return StartCoroutine(waitForChooseRightLeft());
         if(!isRight && firstRotatePerFloor )
         {
-            yield return StartCoroutine(RotateByTarget(null, -90f));
+            yield return StartCoroutine(RotateByTarget(null,270f));
 
         }
         searchString = $"{(isRight ? "Right" : "Left")}_{floor}_floor";
@@ -311,27 +344,34 @@ public class Player : MonoBehaviourPun
                 }
                 else if (stepsCount > countChild) //move until next step dont have Object
                 {
-                    stepsCount = 0; // Reset stepsCount prepare to next floor
-                    floor++;
-                    GameObject nextStart = GameObject.Find($"Start_{floor}");// Find start of next floor
-                    yield return StartCoroutine(MoveToTarget(nextStart));
-                    yield return StartCoroutine(RotateByTarget(nextStart,0f));
-                    //make LeftorRight button active
-                    ScriptActiveBtn scriptActiveBtn = nextStart.GetComponent<ScriptActiveBtn>();  
-                    if (scriptActiveBtn != null)
+                    if (floor < 3)
                     {
-                        scriptActiveBtn.SetBtnActive(LeftOrRight);
-                        firstRotatePerFloor = true;
-                    }
+                        stepsCount = 0; // Reset stepsCount prepare to next floor
+                        floor++;
+                        GameObject nextStart = GameObject.Find($"Start_{floor}");// Find start of next floor
+                        yield return StartCoroutine(MoveToTarget(nextStart));
+                        yield return StartCoroutine(RotateByTarget(nextStart, 0f));
+                        //make LeftorRight button active
+                        ScriptActiveBtn scriptActiveBtn = nextStart.GetComponent<ScriptActiveBtn>();
+                        if (scriptActiveBtn != null)
+                        {
+                            scriptActiveBtn.SetBtnActive(LeftOrRight);
+                            firstRotatePerFloor = true;
+                        }
 
-                    isClicked = true;
-                    yield return StartCoroutine(waitForChooseRightLeft());
-                    //Set new Floor
-                    searchString = $"{(isRight ? "Right" : "Left")}_{floor}_floor";
-                    myObject = GameObject.Find(searchString);
-                    myObjectCount = myObject.transform;
-                    countChild = myObjectCount.childCount;
-                    continue;
+                        isClicked = true;
+                        yield return StartCoroutine(waitForChooseRightLeft());
+                        //Set new Floor
+                        searchString = $"{(isRight ? "Right" : "Left")}_{floor}_floor";
+                        myObject = GameObject.Find(searchString);
+                        myObjectCount = myObject.transform;
+                        countChild = myObjectCount.childCount;
+                        continue;
+                    }
+                    else
+                    {
+                        GameManager.Instance.DestroyAllPlayers();
+                    }
                 }
                 //Get next position by get child at stepsCount
                 Transform myTransform = myObject.transform.GetChild(stepsCount);
@@ -346,8 +386,22 @@ public class Player : MonoBehaviourPun
                 stepsCount += 1;
 
             }
-
+            
             cardWait = false;
+            if (cardWait == false)
+            {
+                playedCardNumber++;
+            }
+            float s = stepsCount;
+            Debug.Log(Mathf.CeilToInt(s / 3));
+            float z = Mathf.CeilToInt(s / 3);
+            int e = (int)Mathf.Round(z);
+            if (photonView.IsMine && cardWait == false)
+            {
+                int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
+
+                GameManager.Instance.photonView.RPC("givecard", RpcTarget.All, e, userId);
+            }
         }
         else
         {

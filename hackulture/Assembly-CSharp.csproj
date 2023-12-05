@@ -75,6 +75,7 @@
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
     <Compile Include="Assets\script\Player.cs" />
+    <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\script\work_card.cs" />
     <Compile Include="Assets\script\Manager\GameSettings.cs" />

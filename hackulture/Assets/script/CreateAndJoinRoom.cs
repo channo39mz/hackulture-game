@@ -42,8 +42,10 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
         Debug.Log("UserId in OnJoinedRoom "+ userId);
         PhotonNetwork.LoadLevel("mainscine");
-    }
+        
 
+    }
+ 
     public override void OnDisconnected(DisconnectCause cause)
     {
         Debug.Log("Disconnected from server for reason" + cause.ToString());

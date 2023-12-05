@@ -5,11 +5,11 @@ using UnityEngine;
 public class action_card
 {
     public int action = 0;
-    public string character = "";
-    public action_card(int action,string character)
+    public string character = "1";
+    public action_card(int action)
     {
         this.action = action;
-        this.character = character;
+        //this.character = character;
     }
     public void act()
     {

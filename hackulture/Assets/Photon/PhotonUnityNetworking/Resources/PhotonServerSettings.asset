@@ -43,6 +43,15 @@ MonoBehaviour:
   - setRank
   - setNextTurn
   - setIsTurn
+  - SwitchCameraToPlayer
+  - SwitchCameraFollowObj
+  - SwitchFollowTarget
+  - SetCameraTarget
+  - DestroyAllPlayers
+  - DestroySelf
+  - givecard
+  - addEachPlayerToDict
+  - SyncDictionary
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
