@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -399,8 +399,17 @@ public class Player : MonoBehaviourPun
             if (photonView.IsMine && cardWait == false)
             {
                 int userId = PhotonNetwork.LocalPlayer.ActorNumber; //Unique Id create by photon when player connect to server
+                if (photonView.IsMine)
+                {
+                    GameManager.Instance.photonView.RPC("givecard", RpcTarget.All, e, userId, photonView.ViewID);
+                }
 
-                GameManager.Instance.photonView.RPC("givecard", RpcTarget.All, e, userId);
+
+                /*if (photonView.IsMine)
+                {
+                    // เรียกใช้งานฟังก์ชันเพื่อขอตัวเลขจาก GameManager
+                    RequestNumberFromGameManager();
+                }*/
             }
         }
         else
@@ -408,6 +417,24 @@ public class Player : MonoBehaviourPun
             Debug.LogError("Object with name 'ObjectName' not found.");
         }
     }
+
+    // เรียกใช้งานฟังก์ชันนี้เพื่อขอตัวเลขจาก GameManager
+    private void RequestNumberFromGameManager()
+    {
+        // เรียกใช้งานฟังก์ชันใน GameManager ผ่าน RPC
+        GameManager.Instance.photonView.RPC("RPC_SendNumberToPlayer", RpcTarget.All, photonView.ViewID);
+    }
+
+    // [PunRPC] ที่ Player ใช้เพื่อรับตัวเลขจาก GameManager
+    [PunRPC]
+    public void RPC_ReceiveNumberFromGameManager(int number)
+    {
+        // ทำสิ่งที่คุณต้องการกับตัวเลขที่ได้รับ
+        Debug.Log($"Player received number from GameManager: {number}");
+        myScore += number;
+        Debug.Log($"Player myScore: {myScore}");
+    }
+
     IEnumerator MoveToTarget(GameObject targetObject)
     {
         float totalTime = 0.3f; // Adjust this based on how long you want the movement to take

@@ -52,6 +52,8 @@ MonoBehaviour:
   - givecard
   - addEachPlayerToDict
   - SyncDictionary
+  - RPC_ReceiveNumberFromGameManager
+  - RPC_SendNumberToPlayer
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

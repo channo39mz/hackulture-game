@@ -2594,9 +2594,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9ba40688d92b871d3363bcb792c65ab8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: provinceitem
   platform: 19
   scenePathNames:
   - Assets/Scenes/Loading.unity
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/mainscine.unity
-  playerPath: C:/Tommie/Unity/hackulture_test/hackulture-game/hackulture/Client/hackulture.exe
+  playerPath: C:/Users/channo39mz/Desktop/build/hackulture.exe

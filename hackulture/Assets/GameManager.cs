@@ -2,6 +2,7 @@
 using Photon.Pun;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 //using static UnityEditor.PlayerSettings;
 
 using ThreadingTimer = System.Threading.Timer;
@@ -18,7 +19,7 @@ public class EachPlayer
     public int Pos;
     public int Rank;
     public string Character;
-    public List<int> itemlist = new List<int>();
+    public List<provinceitem> itemlist = new List<provinceitem>();
     public bool IsTurn = false;
 }
 public class GameManager : MonoBehaviourPunCallbacks
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private bool gameStart = false;
     private static int timePerTurn = 45;
     //int maxPlayer = PhotonNetwork.CurrentRoom.MaxPlayers;
-    [SerializeField] private List<Sprite> all_province_card_image = new List<Sprite>();
+    [SerializeField] public List<Sprite> all_province_card_image = new List<Sprite>();
     private List<List<int>> ProvinceList = new List<List<int>>();
     int maxPlayer = 2;
     public void Start()
@@ -104,13 +105,15 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
     public void addprovinceDack()
     {
+        int numberofcard = 1;
         for (int i = 0; i < 12; i++)
         {
             List<int> sublist = new List<int>();
             ProvinceList.Add(sublist);
             for (int j = 0; j < 3; j++)
             {
-                ProvinceList[i].Add(j);
+                ProvinceList[i].Add(numberofcard);
+                numberofcard++;
             }
         }
     }
@@ -308,12 +311,13 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
     [PunRPC]
-    public void givecard(int number, int actorNumber)
+    public void givecard(int number, int actorNumber , int playerViewID)
     {
         int randomRow = number;
         int randomColumn = Random.Range(0, ProvinceList[randomRow].Count);
         int removedValue = ProvinceList[randomRow][randomColumn];
         ProvinceList[randomRow].RemoveAt(randomColumn);
+        PhotonView targetPlayerView = PhotonView.Find(playerViewID);
         foreach (var kvp in allPlayers)
         {
             Debug.Log($"Player: {kvp.Key}, NickName: {kvp.Value.NickName}");
@@ -321,9 +325,94 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (allPlayers.ContainsKey(actorNumber))
         {
             EachPlayer playerInfo = allPlayers[actorNumber];
-            Debug.Log("pass");
             
-            playerInfo.itemlist.Add(removedValue);
+
+            /*provinceitem pitem = new provinceitem(removedValue);
+            StartCoroutine(WaitForPreviousCommandAndSendNumber(targetPlayerView));
+            Debug.Log($"removedValue = {removedValue} + {pitem.getscor()}");
+            playerInfo.itemlist.Add(pitem);*/
+            if (targetPlayerView != null && removedValue % 3 != 0)
+            {
+                provinceitem pitem = new provinceitem(removedValue);
+                Debug.Log($"removedValue = {removedValue}, itemID = {pitem.getid()}, itemScor = {pitem.getscor()}");
+                targetPlayerView.RPC("RPC_ReceiveNumberFromGameManager", RpcTarget.Others, pitem.getscor());
+               
+                playerInfo.itemlist.Add(pitem);
+                
+                GameObject canvasObject = GameObject.Find("itemview");
+
+                // ตรวจสอบว่าพบ Canvas หรือไม่
+                if (canvasObject != null)
+                {
+                    // หา Image ภายใน Canvas
+                    Image itemImage = canvasObject.GetComponentInChildren<Image>();
+
+                    // ตรวจสอบว่าพบ Image หรือไม่
+                    if (itemImage != null)
+                    {
+                        itemImage.enabled = true;
+                        
+                        switch (pitem.getid())
+                        {
+                            case 1:
+                                itemImage.sprite = all_province_card_image[0];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 2:
+                                itemImage.sprite = all_province_card_image[1];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 4:
+                                itemImage.sprite = all_province_card_image[2];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 5:
+                                itemImage.sprite = all_province_card_image[3];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 7:
+                                itemImage.sprite = all_province_card_image[4];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 8:
+                                itemImage.sprite = all_province_card_image[5];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 9:
+                                itemImage.sprite = all_province_card_image[6];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            case 10:
+                                itemImage.sprite = all_province_card_image[7];
+                                Invoke("imagedisapper", 2.0f);
+                                // ทำสิ่งที่คุณต้องการกับ Image ที่พบ
+                                StartCoroutine(ChangeImageAndDisappear(itemImage));
+                                break;
+                            default:
+                                // code block
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("Image not found in Canvas.");
+                    }
+                }
+            }
         }
         else
         {
@@ -331,6 +420,31 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
 
     }
+    IEnumerator<WaitForSeconds> ChangeImageAndDisappear(Image itemImage)
+    {
+
+        // รอเวลา 2 วินาที
+        yield return new WaitForSeconds(2.0f);
+
+        // ซ่อนรูปภาพ (หรือทำสิ่งที่คุณต้องการ)
+        itemImage.enabled = false;
+
+        // เสร็จสิ้น Coroutine
+        yield break;
+    }
+    /*[PunRPC]
+    public void RPC_SendNumberToPlayer(int playerViewID)
+    {
+        // หา Player ที่มี ViewID ที่ถูกส่งมา
+        PhotonView targetPlayerView = PhotonView.Find(playerViewID);
+
+        // ตรวจสอบว่าเราพบ Player หรือไม่
+        if (targetPlayerView != null)
+        {
+            // ส่งตัวเลขไปยัง Player ที่พบ
+            targetPlayerView.RPC("RPC_ReceiveNumberFromGameManager", RpcTarget.All, Random.Range(1, 100));
+        }
+    }*/
 
     [PunRPC]
     public void setIsTurn(int actorNumber, bool isTurn)
