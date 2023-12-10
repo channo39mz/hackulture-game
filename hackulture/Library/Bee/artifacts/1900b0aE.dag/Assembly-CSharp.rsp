@@ -398,6 +398,7 @@
 "Assets/script/Manager/MasterManager.cs"
 "Assets/script/Manager/SingletonScriptableObject.cs"
 "Assets/script/my_maincharactor.cs"
+"Assets/script/onclickforVDO.cs"
 "Assets/script/Player.cs"
 "Assets/script/PlayerListing.cs"
 "Assets/script/PlayerListingsMenu.cs"
